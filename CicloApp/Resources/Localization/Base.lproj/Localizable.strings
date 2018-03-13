@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  CicloApp
+
+  Created by Pavel Belevtsev on 13.02.18.
+  Copyright © 2018 Lindenvalley. All rights reserved.
+*/
+
+"tab_device" = "Device";
+"tab_history" = "History";
+"tab_settings" = "Settings";

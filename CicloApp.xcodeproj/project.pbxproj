@@ -13,6 +13,10 @@
 		3BF6A70D205819B6004AD091 /* CicloApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6A70B205819B6004AD091 /* CicloApp.xcdatamodeld */; };
 		3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6A70E205819B6004AD091 /* Assets.xcassets */; };
 		3BF6A712205819B6004AD091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6A710205819B6004AD091 /* LaunchScreen.storyboard */; };
+		3BFB29C720585C4A005CB66C /* MainTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB29C620585C4A005CB66C /* MainTabsViewController.swift */; };
+		3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB29CA20585E7D005CB66C /* Localizable.strings */; };
+		3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB29CE20585F22005CB66C /* MainTabs.plist */; };
+		3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3BF6A70E205819B6004AD091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BF6A711205819B6004AD091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BF6A713205819B6004AD091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BFB29C620585C4A005CB66C /* MainTabsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabsViewController.swift; sourceTree = "<group>"; };
+		3BFB29CB20585E7D005CB66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3BFB29CE20585F22005CB66C /* MainTabs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainTabs.plist; sourceTree = "<group>"; };
+		3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +65,82 @@
 			isa = PBXGroup;
 			children = (
 				3BF6A704205819B6004AD091 /* AppDelegate.swift */,
-				3BF6A706205819B6004AD091 /* ViewController.swift */,
-				3BF6A708205819B6004AD091 /* Main.storyboard */,
-				3BF6A70E205819B6004AD091 /* Assets.xcassets */,
-				3BF6A710205819B6004AD091 /* LaunchScreen.storyboard */,
-				3BF6A713205819B6004AD091 /* Info.plist */,
-				3BF6A70B205819B6004AD091 /* CicloApp.xcdatamodeld */,
+				3BFB29B920585914005CB66C /* UserInterface */,
+				3BFB29C420585921005CB66C /* Resources */,
 			);
 			path = CicloApp;
+			sourceTree = "<group>";
+		};
+		3BFB29B920585914005CB66C /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB29BA20585914005CB66C /* Storyboards */,
+				3BFB29BF20585914005CB66C /* ViewControllers */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		3BFB29BA20585914005CB66C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3BF6A708205819B6004AD091 /* Main.storyboard */,
+				3BF6A710205819B6004AD091 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3BFB29BF20585914005CB66C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB29C520585A85005CB66C /* MainTabs */,
+				3BF6A706205819B6004AD091 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3BFB29C420585921005CB66C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB29C920585E7D005CB66C /* Localization */,
+				3BF6A713205819B6004AD091 /* Info.plist */,
+				3BF6A70B205819B6004AD091 /* CicloApp.xcdatamodeld */,
+				3BF6A70E205819B6004AD091 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BFB29C520585A85005CB66C /* MainTabs */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB29CD20585F22005CB66C /* Data */,
+				3BFB29C820585C63005CB66C /* Subviews */,
+				3BFB29C620585C4A005CB66C /* MainTabsViewController.swift */,
+			);
+			path = MainTabs;
+			sourceTree = "<group>";
+		};
+		3BFB29C820585C63005CB66C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		3BFB29C920585E7D005CB66C /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB29CA20585E7D005CB66C /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		3BFB29CD20585F22005CB66C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BFB29CE20585F22005CB66C /* MainTabs.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF6A712205819B6004AD091 /* LaunchScreen.storyboard in Resources */,
+				3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */,
 				3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */,
 				3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */,
+				3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF6A70D205819B6004AD091 /* CicloApp.xcdatamodeld in Sources */,
+				3BFB29C720585C4A005CB66C /* MainTabsViewController.swift in Sources */,
 				3BF6A707205819B6004AD091 /* ViewController.swift in Sources */,
 				3BF6A705205819B6004AD091 /* AppDelegate.swift in Sources */,
+				3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +242,14 @@
 				3BF6A711205819B6004AD091 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3BFB29CA20585E7D005CB66C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BFB29CB20585E7D005CB66C /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -279,7 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CicloApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.CicloApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CicloApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.CicloApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
