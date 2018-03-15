@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EditAccountTableViewCell" rowHeight="56" id="KGk-i7-Jjw" customClass="EditAccountTableViewCell" customModule="CicloApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yfh-Kd-ZMj">
+                        <rect key="frame" x="24" y="0.0" width="272" height="46.5"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="hJ8-Dr-FgC"/>
+                        </connections>
+                    </textField>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JR-FY-avf">
+                        <rect key="frame" x="24" y="46.5" width="272" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rVq-qI-Ob5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Yfh-Kd-ZMj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8CT-Sa-urN"/>
+                    <constraint firstAttribute="trailing" secondItem="Yfh-Kd-ZMj" secondAttribute="trailing" constant="24" id="BuQ-zI-bRe"/>
+                    <constraint firstAttribute="trailing" secondItem="7JR-FY-avf" secondAttribute="trailing" constant="24" id="XLi-VW-VoW"/>
+                    <constraint firstAttribute="bottom" secondItem="7JR-FY-avf" secondAttribute="bottom" constant="8" id="bNW-Ti-OaR"/>
+                    <constraint firstItem="Yfh-Kd-ZMj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="u0v-Ii-XRI"/>
+                    <constraint firstItem="7JR-FY-avf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="vpi-Kg-Mo7"/>
+                    <constraint firstItem="7JR-FY-avf" firstAttribute="top" secondItem="Yfh-Kd-ZMj" secondAttribute="bottom" id="ySy-z3-RpM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="textFieldValue" destination="Yfh-Kd-ZMj" id="2KR-4z-XTG"/>
+                <outlet property="viewDivider" destination="7JR-FY-avf" id="NHJ-bc-5sy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

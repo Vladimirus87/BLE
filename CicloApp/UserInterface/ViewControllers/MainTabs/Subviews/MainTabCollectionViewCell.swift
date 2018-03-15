@@ -15,8 +15,17 @@ class MainTabCollectionViewCell: UICollectionViewCell {
     
     func updateWithTabInfo(tabInfo: [String : String], isSelected: Bool) {
         
-        self.imageIcon.image = UIImage.init(named: tabInfo["image"]!)
+        let color : UIColor = isSelected ? Config.shared.baseColor() : .black
+        
+        if let image = UIImage.init(named: tabInfo["image"]!) {
+            self.imageIcon.image = image.tint(with: color)
+        }
         self.labelTitle.text = NSLocalizedString(tabInfo["title"]!, comment: "")
+        self.labelTitle.textColor = color
+        
+        let alpha : CGFloat = isSelected ? 1.0 : 0.5
+        self.imageIcon.alpha = alpha
+        self.labelTitle.alpha = alpha
         
     }
 }

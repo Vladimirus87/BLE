@@ -9,3 +9,7 @@
 "tab_device" = "Device";
 "tab_history" = "History";
 "tab_settings" = "Settings";
+
+"email" = "Email";
+"password" = "Password";
+"retype_password" = "Retype Password";

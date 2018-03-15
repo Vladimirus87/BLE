@@ -8,18 +8,24 @@
 
 import UIKit
 
-class MainTabsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class MainTabsViewController: CAViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionViewTabs: UICollectionView!
+    
+    @IBOutlet weak var viewContainer: UIView!
+    
+    var currentController : UIViewController!
     
     var dataArray : NSArray!
     var currentTab: Int = 0 {
         didSet {
             if (self.dataArray != nil) {
-                let tabInfo = dataArray[currentTab]
+                let tabInfo = dataArray[currentTab]  as! [String : String]
                 
-                print("Tab \(tabInfo)")
+                let controllerName = tabInfo["controller"]!
+                let controller = self.storyboard?.instantiateViewController(withIdentifier: controllerName)
                 
+                add(asChildViewController: controller!)
             }
         }
     }
@@ -32,7 +38,7 @@ class MainTabsViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         self.currentTab = 0
     }
-    /*
+    
     override func resizeSubviews() {
         super.resizeSubviews()
         
@@ -40,7 +46,6 @@ class MainTabsViewController: UIViewController, UICollectionViewDelegate, UIColl
         self.collectionViewTabs.reloadData()
         
     }
-    */
     
     // MARK: - UICollectionView
     
@@ -81,6 +86,43 @@ class MainTabsViewController: UIViewController, UICollectionViewDelegate, UIColl
         
     }
 
+    // MARK: - Content Container
+    
+    private func add(asChildViewController viewController: UIViewController) {
+        
+        if (self.currentController != nil) {
+            self.remove(asChildViewController: self.currentController)
+        }
+        
+        // Add Child View Controller
+        addChildViewController(viewController)
+        
+        // Add Child View as Subview
+        viewContainer.addSubview(viewController.view)
+        
+        // Configure Child View
+        viewController.view.frame = viewContainer.bounds
+        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        // Notify Child View Controller
+        viewController.didMove(toParentViewController: self)
+        
+        self.currentController = viewController
+        
+    }
+    
+    private func remove(asChildViewController viewController: UIViewController) {
+        // Notify Child View Controller
+        viewController.willMove(toParentViewController: nil)
+        
+        // Remove Child View From Superview
+        viewController.view.removeFromSuperview()
+        
+        // Notify Child View Controller
+        viewController.removeFromParentViewController()
+    }
+
+    
     // MARK: -
     
     override func didReceiveMemoryWarning() {

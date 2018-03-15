@@ -8,7 +8,7 @@
 		<key>title</key>
 		<string>tab_device</string>
 		<key>controller</key>
-		<string></string>
+		<string>NavigationConnectViewController</string>
 	</dict>
 	<dict>
 		<key>image</key>
@@ -16,7 +16,7 @@
 		<key>title</key>
 		<string>tab_history</string>
 		<key>controller</key>
-		<string></string>
+		<string>HistoryViewController</string>
 	</dict>
 	<dict>
 		<key>image</key>
@@ -24,7 +24,7 @@
 		<key>title</key>
 		<string>tab_settings</string>
 		<key>controller</key>
-		<string></string>
+		<string>SettingsViewController</string>
 	</dict>
 </array>
 </plist>

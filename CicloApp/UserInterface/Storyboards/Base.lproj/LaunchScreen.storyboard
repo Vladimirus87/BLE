@@ -22,14 +22,14 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="14a-9D-Kp0">
-                                <rect key="frame" x="221" y="84" width="110" height="21"/>
+                                <rect key="frame" x="221" y="64" width="110" height="21"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TCl-Qh-N2u" secondAttribute="trailing" id="7FU-IC-tu0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TCl-Qh-N2u" secondAttribute="bottom" id="Cli-c8-3D8"/>
-                            <constraint firstItem="14a-9D-Kp0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="giV-qL-YAs"/>
+                            <constraint firstItem="14a-9D-Kp0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="giV-qL-YAs"/>
                             <constraint firstItem="TCl-Qh-N2u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iXO-Mb-ZAW"/>
                             <constraint firstItem="TCl-Qh-N2u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="p9q-1r-bRO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="14a-9D-Kp0" secondAttribute="trailing" constant="44" id="spa-gP-mht"/>
