@@ -34,9 +34,25 @@ class CAViewController: UIViewController, UIGestureRecognizerDelegate {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(CAViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(CAViewController.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         closeKeyboard()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
     }
     
     // Mark: - Resizing
@@ -65,6 +81,24 @@ class CAViewController: UIViewController, UIGestureRecognizerDelegate {
         
     }
     
+    @objc func keyboardWillShow(_ notification: Notification) {
+        
+        let obj = (notification as NSNotification).userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue
+        
+        self.updateKeyboardHeight(obj.cgRectValue.size.height)
+        
+    }
+    
+    @objc func keyboardWillHide(_ notification: Notification) {
+        
+        self.updateKeyboardHeight(0.0)
+        
+    }
+
+    func updateKeyboardHeight(_ keyboardHeight : CGFloat) {
+        
+    }
+
     // Mark: - Notifications
     
     @objc func updateColorScheme() {

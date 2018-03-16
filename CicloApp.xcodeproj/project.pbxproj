@@ -14,6 +14,12 @@
 		3B0C13E4205AD75100AB245F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C13E3205AD75100AB245F /* RegisterViewController.swift */; };
 		3B0C13E6205AD78F00AB245F /* Register.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C13E5205AD78F00AB245F /* Register.plist */; };
 		3B0C13E8205AE21F00AB245F /* MakeAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C13E7205AE21F00AB245F /* MakeAccountViewController.swift */; };
+		3B29F8C4205C1EAF00038C2E /* HelveticaBQ-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B29F8C2205C1EAF00038C2E /* HelveticaBQ-Bold.ttf */; };
+		3B29F8C5205C1EAF00038C2E /* HelveticaBQ-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B29F8C3205C1EAF00038C2E /* HelveticaBQ-Roman.ttf */; };
+		3B29F8C7205C240A00038C2E /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8C6205C240A00038C2E /* ForgotViewController.swift */; };
+		3B29F8C9205C280800038C2E /* ForgotPassword.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B29F8C8205C280800038C2E /* ForgotPassword.plist */; };
+		3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CA205C297300038C2E /* AccountViewController.swift */; };
+		3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */; };
 		3B730172205A793100691792 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730171205A793100691792 /* StartViewController.swift */; };
 		3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730173205A7FC900691792 /* WithoutAccountViewController.swift */; };
 		3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F2BB72059769700045E2B /* CAViewController.swift */; };
@@ -49,6 +55,12 @@
 		3B0C13E3205AD75100AB245F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3B0C13E5205AD78F00AB245F /* Register.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Register.plist; sourceTree = "<group>"; };
 		3B0C13E7205AE21F00AB245F /* MakeAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeAccountViewController.swift; sourceTree = "<group>"; };
+		3B29F8C2205C1EAF00038C2E /* HelveticaBQ-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaBQ-Bold.ttf"; sourceTree = "<group>"; };
+		3B29F8C3205C1EAF00038C2E /* HelveticaBQ-Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaBQ-Roman.ttf"; sourceTree = "<group>"; };
+		3B29F8C6205C240A00038C2E /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		3B29F8C8205C280800038C2E /* ForgotPassword.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ForgotPassword.plist; sourceTree = "<group>"; };
+		3B29F8CA205C297300038C2E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetLinkViewController.swift; sourceTree = "<group>"; };
 		3B730171205A793100691792 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3B730173205A7FC900691792 /* WithoutAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAccountViewController.swift; sourceTree = "<group>"; };
 		3B7F2BB72059769700045E2B /* CAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +115,7 @@
 			children = (
 				3B0C13DD205ABDB700AB245F /* SignIn.plist */,
 				3B0C13E5205AD78F00AB245F /* Register.plist */,
+				3B29F8C8205C280800038C2E /* ForgotPassword.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -114,9 +127,12 @@
 				3B0C13DB205ABD9300AB245F /* Subviews */,
 				3B730171205A793100691792 /* StartViewController.swift */,
 				3B730173205A7FC900691792 /* WithoutAccountViewController.swift */,
+				3B29F8CA205C297300038C2E /* AccountViewController.swift */,
 				3B0C13D9205A8E3700AB245F /* SignInViewController.swift */,
 				3B0C13E3205AD75100AB245F /* RegisterViewController.swift */,
 				3B0C13E7205AE21F00AB245F /* MakeAccountViewController.swift */,
+				3B29F8C6205C240A00038C2E /* ForgotViewController.swift */,
+				3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -200,6 +216,15 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		3BEA45EC205C1A730002931F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3B29F8C2205C1EAF00038C2E /* HelveticaBQ-Bold.ttf */,
+				3B29F8C3205C1EAF00038C2E /* HelveticaBQ-Roman.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		3BF6A6F8205819B6004AD091 = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +288,7 @@
 		3BFB29C420585921005CB66C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3BEA45EC205C1A730002931F /* Fonts */,
 				3BFB29C920585E7D005CB66C /* Localization */,
 				3BF6A713205819B6004AD091 /* Info.plist */,
 				3BF6A70B205819B6004AD091 /* CicloApp.xcdatamodeld */,
@@ -337,7 +363,7 @@
 				TargetAttributes = {
 					3BF6A700205819B6004AD091 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -370,9 +396,12 @@
 				3B0C13E2205ABE5800AB245F /* EditAccountTableViewCell.xib in Resources */,
 				3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */,
 				3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */,
+				3B29F8C4205C1EAF00038C2E /* HelveticaBQ-Bold.ttf in Resources */,
 				3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */,
 				3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */,
 				3B0C13E6205AD78F00AB245F /* Register.plist in Resources */,
+				3B29F8C9205C280800038C2E /* ForgotPassword.plist in Resources */,
+				3B29F8C5205C1EAF00038C2E /* HelveticaBQ-Roman.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,10 +413,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */,
+				3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */,
 				3B0C13E4205AD75100AB245F /* RegisterViewController.swift in Sources */,
 				3B7F2BC02059816600045E2B /* CAView.swift in Sources */,
 				3B7F2BD320598F4D00045E2B /* DeviceViewController.swift in Sources */,
 				3B7F2BBA205976D100045E2B /* UIExtensions.swift in Sources */,
+				3B29F8C7205C240A00038C2E /* ForgotViewController.swift in Sources */,
 				3BF6A70D205819B6004AD091 /* CicloApp.xcdatamodeld in Sources */,
 				3B730172205A793100691792 /* StartViewController.swift in Sources */,
 				3B7F2BCF20598C0400045E2B /* HistoryViewController.swift in Sources */,
@@ -405,6 +436,7 @@
 				3B0C13E8205AE21F00AB245F /* MakeAccountViewController.swift in Sources */,
 				3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */,
 				3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */,
+				3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */,
 				3B7F2BC22059817C00045E2B /* CAButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -538,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -550,11 +582,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SU99T79PF2;
 				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.CicloApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "11c13cdc-2345-4c8a-afed-d8694d7c19ba";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Belevtsev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -564,11 +600,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lindenvalley.CicloApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

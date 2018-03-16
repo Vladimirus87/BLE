@@ -42,7 +42,7 @@ class EditAccountTableViewCell: UITableViewCell, UITextFieldDelegate {
         self.item = data
         
         self.textFieldValue.placeholder = LS(data["title"]!)
-        self.textFieldValue.attributedPlaceholder = NSAttributedString(string: self.textFieldValue.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.gray])
+        self.textFieldValue.attributedPlaceholder = NSAttributedString(string: self.textFieldValue.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.init(red: 1.0, green: 1.0, blue: 1.0, alpha: 0.5)])
 
         self.textFieldValue.text = data["value"]
         
