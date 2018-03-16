@@ -13,3 +13,7 @@
 "email" = "Email";
 "password" = "Password";
 "retype_password" = "Retype Password";
+
+"device_settings" = "Device settings";
+"instruction_manual" = "Instruction manual";
+"accessories" = "Accessories";

@@ -28,7 +28,6 @@ class ForgotViewController: AccountViewController {
         
         self.viewHeader.frame = CGRect.init(x: self.viewHeader.frame.origin.x, y: self.viewHeader.frame.origin.y,
                                             width: self.viewHeader.frame.size.width, height: height)
-        print("height \(height)")
         
         self.tableViewData.tableHeaderView = nil;
         self.tableViewData.tableHeaderView = self.viewHeader;

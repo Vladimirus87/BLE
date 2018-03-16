@@ -20,6 +20,7 @@
 		3B29F8C9205C280800038C2E /* ForgotPassword.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B29F8C8205C280800038C2E /* ForgotPassword.plist */; };
 		3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CA205C297300038C2E /* AccountViewController.swift */; };
 		3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */; };
+		3B40FE98205C572500DE3F4B /* DeviceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B40FE97205C572500DE3F4B /* DeviceInfo.plist */; };
 		3B730172205A793100691792 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730171205A793100691792 /* StartViewController.swift */; };
 		3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730173205A7FC900691792 /* WithoutAccountViewController.swift */; };
 		3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F2BB72059769700045E2B /* CAViewController.swift */; };
@@ -61,6 +62,7 @@
 		3B29F8C8205C280800038C2E /* ForgotPassword.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ForgotPassword.plist; sourceTree = "<group>"; };
 		3B29F8CA205C297300038C2E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetLinkViewController.swift; sourceTree = "<group>"; };
+		3B40FE97205C572500DE3F4B /* DeviceInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceInfo.plist; sourceTree = "<group>"; };
 		3B730171205A793100691792 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3B730173205A7FC900691792 /* WithoutAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAccountViewController.swift; sourceTree = "<group>"; };
 		3B7F2BB72059769700045E2B /* CAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		3B40FE94205C569200DE3F4B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3B40FE97205C572500DE3F4B /* DeviceInfo.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		3B730170205A791700691792 /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +176,7 @@
 		3B7F2BBE2059815000045E2B /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				3B40FE94205C569200DE3F4B /* Data */,
 				3B7F2BC3205983C600045E2B /* Subviews */,
 				3B7F2BC4205983E600045E2B /* ConnectViewController.swift */,
 				3B7F2BD220598F4D00045E2B /* DeviceViewController.swift */,
@@ -391,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0C13DE205ABDB700AB245F /* SignIn.plist in Resources */,
+				3B40FE98205C572500DE3F4B /* DeviceInfo.plist in Resources */,
 				3B7F2BC92059841A00045E2B /* ConnectTableViewCell.xib in Resources */,
 				3BF6A712205819B6004AD091 /* LaunchScreen.storyboard in Resources */,
 				3B0C13E2205ABE5800AB245F /* EditAccountTableViewCell.xib in Resources */,

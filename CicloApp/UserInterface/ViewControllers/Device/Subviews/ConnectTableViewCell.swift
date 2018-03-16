@@ -8,13 +8,32 @@
 
 import UIKit
 
+
+@objc protocol ConnectTableViewCellDelegate: class {
+    func connectCellPairPressed(_ value: Any?)
+}
+
 class ConnectTableViewCell: UITableViewCell {
 
+    weak var delegate: ConnectTableViewCellDelegate?
+
+    @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var buttonPair: CAButton!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    @IBAction func buttonPairPressed(_ sender: UIButton) {
+        
+        if self.delegate != nil {
+            self.delegate?.connectCellPairPressed(nil)
+        }
+        
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
