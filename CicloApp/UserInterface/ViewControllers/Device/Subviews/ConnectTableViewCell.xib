@@ -96,6 +96,7 @@
             <connections>
                 <outlet property="buttonPair" destination="BkP-6K-S40" id="xnM-vM-Bab"/>
                 <outlet property="labelTitle" destination="ZtY-i8-LjD" id="HHi-CZ-Kvw"/>
+                <outlet property="viewDivider" destination="YMm-ll-YAf" id="TgB-LJ-MTR"/>
             </connections>
         </tableViewCell>
     </objects>

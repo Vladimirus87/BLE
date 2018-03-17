@@ -38,15 +38,14 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ConnectTableViewCell  else {
             fatalError("The dequeued cell is not an instance of \(cellIdentifier).")
         }
         
         cell.delegate = self
+        cell.updateWithData(value: nil, (indexPath.row == 2))
         
         return cell
-        
         
     }
     

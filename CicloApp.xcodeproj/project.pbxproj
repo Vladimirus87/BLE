@@ -36,6 +36,16 @@
 		3B7F2BD320598F4D00045E2B /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F2BD220598F4D00045E2B /* DeviceViewController.swift */; };
 		3B7F2BD52059922A00045E2B /* DeviceInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F2BD42059922A00045E2B /* DeviceInfoTableViewCell.swift */; };
 		3B7F2BD72059925C00045E2B /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F2BD62059925C00045E2B /* HistoryTableViewCell.swift */; };
+		3BCF12A9205D7717003F5F2C /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF12A8205D7717003F5F2C /* Settings.plist */; };
+		3BCF12AB205D79B4003F5F2C /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF12AA205D79B4003F5F2C /* SettingsTableViewCell.swift */; };
+		3BCF12B0205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF12AE205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift */; };
+		3BCF12B1205D7A39003F5F2C /* SettingsGeneralTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF12AF205D7A39003F5F2C /* SettingsGeneralTableViewCell.xib */; };
+		3BCF12B4205D7FAF003F5F2C /* SettingsModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF12B2205D7FAE003F5F2C /* SettingsModeTableViewCell.swift */; };
+		3BCF12B5205D7FAF003F5F2C /* SettingsModeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF12B3205D7FAE003F5F2C /* SettingsModeTableViewCell.xib */; };
+		3BCF12B8205D8099003F5F2C /* SettingsLanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF12B6205D8098003F5F2C /* SettingsLanguageTableViewCell.swift */; };
+		3BCF12B9205D8099003F5F2C /* SettingsLanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF12B7205D8098003F5F2C /* SettingsLanguageTableViewCell.xib */; };
+		3BCF12BC205D824B003F5F2C /* SettingsInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF12BA205D824B003F5F2C /* SettingsInfoTableViewCell.swift */; };
+		3BCF12BD205D824B003F5F2C /* SettingsInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF12BB205D824B003F5F2C /* SettingsInfoTableViewCell.xib */; };
 		3BF6A705205819B6004AD091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6A704205819B6004AD091 /* AppDelegate.swift */; };
 		3BF6A707205819B6004AD091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6A706205819B6004AD091 /* ViewController.swift */; };
 		3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6A708205819B6004AD091 /* Main.storyboard */; };
@@ -78,6 +88,16 @@
 		3B7F2BD220598F4D00045E2B /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		3B7F2BD42059922A00045E2B /* DeviceInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoTableViewCell.swift; sourceTree = "<group>"; };
 		3B7F2BD62059925C00045E2B /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		3BCF12A8205D7717003F5F2C /* Settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
+		3BCF12AA205D79B4003F5F2C /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		3BCF12AE205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		3BCF12AF205D7A39003F5F2C /* SettingsGeneralTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsGeneralTableViewCell.xib; sourceTree = "<group>"; };
+		3BCF12B2205D7FAE003F5F2C /* SettingsModeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModeTableViewCell.swift; sourceTree = "<group>"; };
+		3BCF12B3205D7FAE003F5F2C /* SettingsModeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsModeTableViewCell.xib; sourceTree = "<group>"; };
+		3BCF12B6205D8098003F5F2C /* SettingsLanguageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsLanguageTableViewCell.swift; sourceTree = "<group>"; };
+		3BCF12B7205D8098003F5F2C /* SettingsLanguageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsLanguageTableViewCell.xib; sourceTree = "<group>"; };
+		3BCF12BA205D824B003F5F2C /* SettingsInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInfoTableViewCell.swift; sourceTree = "<group>"; };
+		3BCF12BB205D824B003F5F2C /* SettingsInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsInfoTableViewCell.xib; sourceTree = "<group>"; };
 		3BF6A701205819B6004AD091 /* CicloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF6A704205819B6004AD091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF6A706205819B6004AD091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -214,17 +234,35 @@
 		3B7F2BCC20598BE000045E2B /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				3B7F2BCD20598BE000045E2B /* Subviews */,
+				3BCF12A7205D7717003F5F2C /* Data */,
+				3BCF12A6205D770E003F5F2C /* Subviews */,
 				3B7F2BD020598C8C00045E2B /* SettingsViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		3B7F2BCD20598BE000045E2B /* Subviews */ = {
+		3BCF12A6205D770E003F5F2C /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				3BCF12AA205D79B4003F5F2C /* SettingsTableViewCell.swift */,
+				3BCF12AE205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift */,
+				3BCF12AF205D7A39003F5F2C /* SettingsGeneralTableViewCell.xib */,
+				3BCF12B2205D7FAE003F5F2C /* SettingsModeTableViewCell.swift */,
+				3BCF12B3205D7FAE003F5F2C /* SettingsModeTableViewCell.xib */,
+				3BCF12B6205D8098003F5F2C /* SettingsLanguageTableViewCell.swift */,
+				3BCF12B7205D8098003F5F2C /* SettingsLanguageTableViewCell.xib */,
+				3BCF12BA205D824B003F5F2C /* SettingsInfoTableViewCell.swift */,
+				3BCF12BB205D824B003F5F2C /* SettingsInfoTableViewCell.xib */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		3BCF12A7205D7717003F5F2C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3BCF12A8205D7717003F5F2C /* Settings.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		3BEA45EC205C1A730002931F /* Fonts */ = {
@@ -403,15 +441,20 @@
 			files = (
 				3B0C13DE205ABDB700AB245F /* SignIn.plist in Resources */,
 				3B40FE98205C572500DE3F4B /* DeviceInfo.plist in Resources */,
+				3BCF12BD205D824B003F5F2C /* SettingsInfoTableViewCell.xib in Resources */,
 				3B7F2BC92059841A00045E2B /* ConnectTableViewCell.xib in Resources */,
+				3BCF12B9205D8099003F5F2C /* SettingsLanguageTableViewCell.xib in Resources */,
 				3BF6A712205819B6004AD091 /* LaunchScreen.storyboard in Resources */,
 				3B0C13E2205ABE5800AB245F /* EditAccountTableViewCell.xib in Resources */,
 				3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */,
 				3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */,
+				3BCF12B5205D7FAF003F5F2C /* SettingsModeTableViewCell.xib in Resources */,
 				3B29F8C4205C1EAF00038C2E /* HelveticaBQ-Bold.ttf in Resources */,
 				3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */,
+				3BCF12B1205D7A39003F5F2C /* SettingsGeneralTableViewCell.xib in Resources */,
 				3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */,
 				3B0C13E6205AD78F00AB245F /* Register.plist in Resources */,
+				3BCF12A9205D7717003F5F2C /* Settings.plist in Resources */,
 				3B29F8C9205C280800038C2E /* ForgotPassword.plist in Resources */,
 				3B29F8C5205C1EAF00038C2E /* HelveticaBQ-Roman.ttf in Resources */,
 			);
@@ -426,14 +469,17 @@
 			files = (
 				3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */,
 				3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */,
+				3BCF12AB205D79B4003F5F2C /* SettingsTableViewCell.swift in Sources */,
 				3B0C13E4205AD75100AB245F /* RegisterViewController.swift in Sources */,
 				3B7F2BC02059816600045E2B /* CAView.swift in Sources */,
 				3B7F2BD320598F4D00045E2B /* DeviceViewController.swift in Sources */,
 				3B7F2BBA205976D100045E2B /* UIExtensions.swift in Sources */,
 				3B29F8C7205C240A00038C2E /* ForgotViewController.swift in Sources */,
 				3BF6A70D205819B6004AD091 /* CicloApp.xcdatamodeld in Sources */,
+				3BCF12B4205D7FAF003F5F2C /* SettingsModeTableViewCell.swift in Sources */,
 				3B730172205A793100691792 /* StartViewController.swift in Sources */,
 				3B7F2BCF20598C0400045E2B /* HistoryViewController.swift in Sources */,
+				3BCF12BC205D824B003F5F2C /* SettingsInfoTableViewCell.swift in Sources */,
 				3B7F2BC5205983E600045E2B /* ConnectViewController.swift in Sources */,
 				3B0C13DA205A8E3800AB245F /* SignInViewController.swift in Sources */,
 				3B7F2BD52059922A00045E2B /* DeviceInfoTableViewCell.swift in Sources */,
@@ -442,6 +488,7 @@
 				3B7F2BC82059841A00045E2B /* ConnectTableViewCell.swift in Sources */,
 				3BF6A707205819B6004AD091 /* ViewController.swift in Sources */,
 				3B0C13E1205ABE5800AB245F /* EditAccountTableViewCell.swift in Sources */,
+				3BCF12B0205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift in Sources */,
 				3B7F2BD120598C8C00045E2B /* SettingsViewController.swift in Sources */,
 				3B7F2BBD2059775400045E2B /* Config.swift in Sources */,
 				3BF6A705205819B6004AD091 /* AppDelegate.swift in Sources */,
@@ -449,6 +496,7 @@
 				3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */,
 				3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */,
 				3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */,
+				3BCF12B8205D8099003F5F2C /* SettingsLanguageTableViewCell.swift in Sources */,
 				3B7F2BC22059817C00045E2B /* CAButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

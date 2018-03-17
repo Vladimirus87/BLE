@@ -19,13 +19,19 @@ class ConnectTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var buttonPair: CAButton!
-    
+    @IBOutlet weak var viewDivider: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    func updateWithData(value: Any?, _ isLastItem : Bool) {
+        
+        self.viewDivider.isHidden = isLastItem
+        
+    }
+    
     @IBAction func buttonPairPressed(_ sender: UIButton) {
         
         if self.delegate != nil {

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaBQ-Roman.ttf">
+            <string>HelveticaBQ-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsLanguageTableViewCell" id="KGk-i7-Jjw" customClass="SettingsLanguageTableViewCell" customModule="CicloApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_info" translatesAutoresizingMaskIntoConstraints="NO" id="aRa-C5-3qh">
+                        <rect key="frame" x="24" y="24" width="24" height="24"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh9-Gc-pn4">
+                        <rect key="frame" x="64" y="12" width="208" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="0.80402728869999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVd-iG-TGg">
+                        <rect key="frame" x="64" y="41" width="208" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_down" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-fI-LKb">
+                        <rect key="frame" x="279" y="33.5" width="10" height="5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLh-OR-2aU">
+                        <rect key="frame" x="64" y="70.5" width="256" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="rfp-AL-pIQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="uh9-Gc-pn4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="64" id="4QI-kb-8V8"/>
+                    <constraint firstItem="WUM-fI-LKb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JzT-Ef-3o9"/>
+                    <constraint firstAttribute="bottom" secondItem="PLh-OR-2aU" secondAttribute="bottom" id="KgO-Gd-Gaj"/>
+                    <constraint firstItem="MVd-iG-TGg" firstAttribute="top" secondItem="uh9-Gc-pn4" secondAttribute="bottom" constant="10" id="Rs8-6P-Dcn"/>
+                    <constraint firstAttribute="trailing" secondItem="uh9-Gc-pn4" secondAttribute="trailing" constant="48" id="Xi6-i0-8BS"/>
+                    <constraint firstItem="uh9-Gc-pn4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="afj-0D-svV"/>
+                    <constraint firstItem="PLh-OR-2aU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="64" id="c6Y-j8-efC"/>
+                    <constraint firstItem="aRa-C5-3qh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="heu-0f-5dO"/>
+                    <constraint firstItem="PLh-OR-2aU" firstAttribute="top" secondItem="MVd-iG-TGg" secondAttribute="bottom" constant="11" id="lHM-9Y-Zs4"/>
+                    <constraint firstItem="WUM-fI-LKb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-36" id="nqD-07-bF8"/>
+                    <constraint firstItem="MVd-iG-TGg" firstAttribute="trailing" secondItem="uh9-Gc-pn4" secondAttribute="trailing" id="pq6-z3-iYG"/>
+                    <constraint firstItem="aRa-C5-3qh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="rMI-4o-231"/>
+                    <constraint firstAttribute="trailing" secondItem="PLh-OR-2aU" secondAttribute="trailing" id="vG6-GQ-lUa"/>
+                    <constraint firstItem="MVd-iG-TGg" firstAttribute="leading" secondItem="uh9-Gc-pn4" secondAttribute="leading" id="xYW-c3-Bfj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageIcon" destination="aRa-C5-3qh" id="H6Y-QM-jna"/>
+                <outlet property="labelTitle" destination="uh9-Gc-pn4" id="kLj-Ay-MrW"/>
+                <outlet property="viewDivider" destination="PLh-OR-2aU" id="oBX-p5-1mQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="action_down" width="10" height="5"/>
+        <image name="icon_info" width="24" height="24"/>
+    </resources>
+</document>

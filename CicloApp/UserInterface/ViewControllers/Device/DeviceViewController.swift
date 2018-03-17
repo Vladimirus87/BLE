@@ -15,7 +15,6 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
     let cellIdentifier = "DeviceInfoTableViewCell"
     var data = [[String : String]]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
