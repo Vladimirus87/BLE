@@ -17,7 +17,9 @@ class SettingsModeTableViewCell: SettingsTableViewCell {
         // Initialization code
         
         self.switchMode.onTintColor = UIColor.colorRGB("6694F9")
-        
+        self.switchMode.backgroundColor = UIColor.lightGray
+        self.switchMode.tintColor = UIColor.lightGray
+        self.switchMode.layer.cornerRadius = 16
     }
 
     override func updateWithData(data: [String : String], _ isLastItem : Bool) {
