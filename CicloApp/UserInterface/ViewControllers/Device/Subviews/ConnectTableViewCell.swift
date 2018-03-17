@@ -30,6 +30,10 @@ class ConnectTableViewCell: UITableViewCell {
         
         self.viewDivider.isHidden = isLastItem
         
+        self.labelTitle.textColor = (Config.shared.colorMode == .light) ? .black : .white
+        self.buttonPair.backgroundColor = Config.shared.baseColor()
+        self.viewDivider.backgroundColor = Config.shared.dividerColor()
+        
     }
     
     @IBAction func buttonPairPressed(_ sender: UIButton) {

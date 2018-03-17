@@ -62,6 +62,15 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
     }
 
     
+    // Mark: - Notifications
+    
+    override func updateColorScheme() {
+        super.updateColorScheme()
+        
+        self.view.backgroundColor = Config.shared.backgroundColor()
+        
+    }
+    
     // MARK: -
     
     override func didReceiveMemoryWarning() {

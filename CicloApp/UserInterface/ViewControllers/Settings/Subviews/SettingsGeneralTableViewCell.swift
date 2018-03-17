@@ -17,6 +17,13 @@ class SettingsGeneralTableViewCell: SettingsTableViewCell {
         // Initialization code
     }
 
+    override func updateWithData(data: [String : String], _ isLastItem : Bool) {
+        super.updateWithData(data: data, isLastItem)
+        
+        self.imageArrow.image = UIImage.init(named: "forward")?.tint(with: Config.shared.textColor())
+        
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

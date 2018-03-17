@@ -10,6 +10,8 @@ import UIKit
 
 class CAViewController: UIViewController, UIGestureRecognizerDelegate {
     
+    @IBOutlet weak var lableTitle: UILabel!
+    
     var isResized = false
     
     override func viewDidLoad() {
@@ -22,7 +24,7 @@ class CAViewController: UIViewController, UIGestureRecognizerDelegate {
         tapKeyboard.delegate = self;
         self.view.addGestureRecognizer(tapKeyboard)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.updateColorScheme), name: Notification.Name(Config.notificationSettingsColor), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updateColorScheme), name: Notification.Name(Config.notificationSettingsColorMode), object: nil)
         
         self.updateColorScheme()
         
@@ -102,6 +104,10 @@ class CAViewController: UIViewController, UIGestureRecognizerDelegate {
     // Mark: - Notifications
     
     @objc func updateColorScheme() {
+        
+        if let labelTitle = self.lableTitle {
+            labelTitle.textColor = Config.shared.titleColor()
+        }
         
     }
     

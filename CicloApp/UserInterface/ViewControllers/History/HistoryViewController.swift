@@ -10,12 +10,28 @@ import UIKit
 
 class HistoryViewController: CAViewController {
 
+    @IBOutlet weak var buttonSelect: UIButton!
+    @IBOutlet weak var buttonSearch: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    // Mark: - Notifications
+    
+    override func updateColorScheme() {
+        super.updateColorScheme()
+        
+        self.view.backgroundColor = Config.shared.backgroundColor()
+        self.buttonSelect.tintColor = Config.shared.textColor()
+        self.buttonSearch.tintColor = Config.shared.textColor()
+        
+    }
+    
+    // MARK: -
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

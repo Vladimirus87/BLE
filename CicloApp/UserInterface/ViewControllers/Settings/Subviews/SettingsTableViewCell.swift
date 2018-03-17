@@ -18,7 +18,9 @@ class SettingsTableViewCell: UITableViewCell {
     weak var delegate: SettingsTableViewCellDelegate?
 
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var labelSubTitle: UILabel!
     @IBOutlet weak var imageIcon: UIImageView!
+    @IBOutlet weak var imageArrow: UIImageView!
     @IBOutlet weak var viewDivider: UIView!
     
     override func awakeFromNib() {
@@ -28,9 +30,17 @@ class SettingsTableViewCell: UITableViewCell {
 
     func updateWithData(data: [String : String], _ isLastItem : Bool) {
         
-        self.imageIcon.image = UIImage.init(named: data["icon"]!)
+        self.imageIcon.image = UIImage.init(named: data["icon"]!)?.tint(with: Config.shared.textColor())
         self.labelTitle.text = LS(data["title"]!)
+        
         self.viewDivider.isHidden = isLastItem
+     
+        self.labelTitle.textColor = Config.shared.textColor()
+        if let labelSubTitle = self.labelSubTitle {
+            labelSubTitle.textColor = Config.shared.subTextColor()
+        }
+        
+        self.viewDivider.backgroundColor = Config.shared.dividerColor()
         
     }
     

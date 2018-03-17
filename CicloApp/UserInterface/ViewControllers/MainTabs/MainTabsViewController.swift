@@ -10,6 +10,8 @@ import UIKit
 
 class MainTabsViewController: CAViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet weak var viewTabs: UIView!
+    @IBOutlet weak var viewTabsDivider: UIView!
     @IBOutlet weak var collectionViewTabs: UICollectionView!
     
     @IBOutlet weak var viewContainer: UIView!
@@ -122,6 +124,18 @@ class MainTabsViewController: CAViewController, UICollectionViewDelegate, UIColl
         viewController.removeFromParentViewController()
     }
 
+    
+    // Mark: - Notifications
+    
+    override func updateColorScheme() {
+        super.updateColorScheme()
+        
+        self.viewTabs.backgroundColor = Config.shared.tabsBgColor()
+        self.viewTabsDivider.backgroundColor = Config.shared.tabsDividerColor()
+        
+        self.collectionViewTabs.reloadData()
+        
+    }
     
     // MARK: -
     

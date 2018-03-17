@@ -11,6 +11,7 @@ import UIKit
 class DeviceInfoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelTitle: UILabel!
+    @IBOutlet weak var imageArrow: UIImageView!
     @IBOutlet weak var viewDivider: UIView!
     
     override func awakeFromNib() {
@@ -21,8 +22,13 @@ class DeviceInfoTableViewCell: UITableViewCell {
     func updateWithData(data: [String : String], _ isLastItem : Bool) {
         
         self.labelTitle.text = LS(data["title"]!)
+        self.imageArrow.image = UIImage.init(named: "forward")?.tint(with: Config.shared.textColor())
         self.viewDivider.isHidden = isLastItem
         
+        self.labelTitle.textColor = Config.shared.textColor()
+        
+        self.viewDivider.backgroundColor = Config.shared.dividerColor()
+
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

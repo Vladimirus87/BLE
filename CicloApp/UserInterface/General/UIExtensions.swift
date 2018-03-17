@@ -79,5 +79,23 @@ extension UIColor {
         
     }
     
+    static func colorRGB(_ hexValue : String) -> UIColor {
+        return UIColor.colorRGB(hexValue, alpha : 1.0)
+    }
+    
+    static func colorRGB(_ hexValue : String, alpha : CGFloat) -> UIColor {
+        
+        if let colorNum = UInt(String(hexValue.suffix(6)), radix: 16) {
+            let red = colorNum >> 16
+            let green = (colorNum & 0x00FF00) >> 8
+            let blue = (colorNum & 0x0000FF)
+            return UIColor(red: CGFloat(red)/255.0, green: CGFloat(green)/255.0, blue: CGFloat(blue)/255.0, alpha: alpha)
+            
+        }
+        return .black
+    }
+    
+
+    
 }
 

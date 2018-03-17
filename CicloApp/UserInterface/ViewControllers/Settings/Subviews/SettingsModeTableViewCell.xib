@@ -36,6 +36,9 @@
                     </label>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kJ0-LX-V9g">
                         <rect key="frame" x="247" y="12.5" width="51" height="31"/>
+                        <connections>
+                            <action selector="switchModeValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="P7g-xW-UML"/>
+                        </connections>
                     </switch>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLh-OR-2aU">
                         <rect key="frame" x="64" y="54.5" width="256" height="1"/>
@@ -65,6 +68,7 @@
             <connections>
                 <outlet property="imageIcon" destination="aRa-C5-3qh" id="H6Y-QM-jna"/>
                 <outlet property="labelTitle" destination="uh9-Gc-pn4" id="kLj-Ay-MrW"/>
+                <outlet property="switchMode" destination="kJ0-LX-V9g" id="QD9-Qf-K3Q"/>
                 <outlet property="viewDivider" destination="PLh-OR-2aU" id="oBX-p5-1mQ"/>
             </connections>
         </tableViewCell>

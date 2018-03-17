@@ -40,7 +40,7 @@
                         <color key="textColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_down" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-fI-LKb">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_down" translatesAutoresizingMaskIntoConstraints="NO" id="WUM-fI-LKb">
                         <rect key="frame" x="279" y="33.5" width="10" height="5"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLh-OR-2aU">
@@ -72,7 +72,9 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="imageArrow" destination="WUM-fI-LKb" id="vWh-xd-bou"/>
                 <outlet property="imageIcon" destination="aRa-C5-3qh" id="H6Y-QM-jna"/>
+                <outlet property="labelSubTitle" destination="MVd-iG-TGg" id="Vgq-ti-XMr"/>
                 <outlet property="labelTitle" destination="uh9-Gc-pn4" id="kLj-Ay-MrW"/>
                 <outlet property="viewDivider" destination="PLh-OR-2aU" id="oBX-p5-1mQ"/>
             </connections>

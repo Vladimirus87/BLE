@@ -10,11 +10,16 @@ import UIKit
 
 class SettingsLanguageTableViewCell: SettingsTableViewCell {
 
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    override func updateWithData(data: [String : String], _ isLastItem : Bool) {
+        super.updateWithData(data: data, isLastItem)
+        
+        self.imageArrow.image = UIImage.init(named: "action_down")?.tint(with: Config.shared.textColor())
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

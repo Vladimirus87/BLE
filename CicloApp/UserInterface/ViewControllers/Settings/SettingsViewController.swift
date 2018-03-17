@@ -64,6 +64,16 @@ class SettingsViewController: CAViewController, UITableViewDelegate, UITableView
         
     }
     
+    // Mark: - Notifications
+    
+    override func updateColorScheme() {
+        super.updateColorScheme()
+        
+        self.view.backgroundColor = Config.shared.backgroundColor()
+        self.tableViewData.reloadData()
+        
+    }
+    
     // MARK: -
     
     override func didReceiveMemoryWarning() {

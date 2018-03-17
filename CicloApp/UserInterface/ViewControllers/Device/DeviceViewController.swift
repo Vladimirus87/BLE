@@ -15,6 +15,19 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
     let cellIdentifier = "DeviceInfoTableViewCell"
     var data = [[String : String]]()
     
+    @IBOutlet weak var labelFirmware: UILabel!
+    @IBOutlet weak var labelFirmwareValue: UILabel!
+    
+    @IBOutlet weak var buttonUpdate: CAButton!
+    
+    @IBOutlet weak var labelMemory: UILabel!
+    @IBOutlet weak var labelMemoryValue: UILabel!
+    
+    @IBOutlet weak var buttonSync: CAButton!
+    @IBOutlet weak var buttonDisconnect: CAButton!
+    
+    @IBOutlet weak var labelPreferences: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,6 +67,28 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
+    
+    // Mark: - Notifications
+    
+    override func updateColorScheme() {
+        super.updateColorScheme()
+        
+        self.tableViewData.backgroundColor = Config.shared.backgroundColor()
+        
+        self.labelFirmware.textColor = Config.shared.textColor()
+        self.labelFirmwareValue.textColor = Config.shared.subTextColor()
+        
+        self.buttonUpdate.tintColor = Config.shared.baseColor()
+        
+        self.labelMemory.textColor = Config.shared.textColor()
+        self.labelMemoryValue.textColor = Config.shared.subTextColor()
+        
+        self.buttonSync.backgroundColor = Config.shared.baseColor()
+        self.buttonDisconnect.tintColor = Config.shared.baseColor()
+        
+        self.labelPreferences.textColor = Config.shared.subTextColor()
         
     }
     
