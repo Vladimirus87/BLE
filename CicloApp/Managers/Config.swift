@@ -103,4 +103,18 @@ class Config: NSObject {
             return UIColor.colorRGB("FFFFFF", alpha: 0.6)
         }
     }
+    
+    func actionBgColor() -> UIColor {
+        if (colorMode == .light) {
+            return UIColor.colorRGB("000000", alpha: 0.1)
+        } else {
+            return UIColor.colorRGB("FFFFFF", alpha: 0.3)
+        }
+    }
+    
+    func actionColor() -> UIColor {
+        return UIColor.colorRGB("14F100")
+    }
+    
+    
 }

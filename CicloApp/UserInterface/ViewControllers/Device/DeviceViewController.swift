@@ -70,6 +70,14 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    // Mark: - Actions
+    
+    @IBAction func buttonDisconnectPressed(_ sender: UIButton) {
+        
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
     // Mark: - Notifications
     
     override func updateColorScheme() {

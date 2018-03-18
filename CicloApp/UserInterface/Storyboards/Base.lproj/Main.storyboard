@@ -176,10 +176,25 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXR-z0-X32" customClass="CAView" customModule="CicloApp" customModuleProvider="target">
                                         <rect key="frame" x="303" y="32" width="48" height="48"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M20-fb-rzD" customClass="CAProgress" customModule="CicloApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQC-FN-dZ8">
+                                                <rect key="frame" x="20" y="15.5" width="8" height="16.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="faj-mE-3vY"/>
                                             <constraint firstAttribute="width" constant="48" id="hjM-7e-NdL"/>
+                                            <constraint firstItem="rQC-FN-dZ8" firstAttribute="centerY" secondItem="wXR-z0-X32" secondAttribute="centerY" id="rVT-sJ-y1D"/>
+                                            <constraint firstItem="rQC-FN-dZ8" firstAttribute="centerX" secondItem="wXR-z0-X32" secondAttribute="centerX" id="xA3-lY-ksT"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -222,8 +237,11 @@
                     <navigationItem key="navigationItem" id="eCp-1J-6b4"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="labelProgress" destination="rQC-FN-dZ8" id="X4Q-6w-e0d"/>
                         <outlet property="lableTitle" destination="A8J-Ce-4HA" id="Wr3-PG-eT1"/>
                         <outlet property="tableViewData" destination="t0s-E4-JIy" id="TdN-N8-CKk"/>
+                        <outlet property="viewConnect" destination="wXR-z0-X32" id="6ii-3h-kBK"/>
+                        <outlet property="viewProgress" destination="M20-fb-rzD" id="PRA-28-dnd"/>
                         <segue destination="lYU-jL-NOR" kind="show" identifier="ShowDevice" id="juo-Ev-Vtz"/>
                     </connections>
                 </viewController>
@@ -355,6 +373,9 @@
                                                     <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="14"/>
                                                     <color key="tintColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="disconnect"/>
+                                                    <connections>
+                                                        <action selector="buttonDisconnectPressed:" destination="lYU-jL-NOR" eventType="touchUpInside" id="OrS-H5-bl5"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -525,10 +546,22 @@
                                     <constraint firstItem="gGv-bZ-Sjc" firstAttribute="leading" secondItem="CNT-k5-w8Z" secondAttribute="leading" constant="24" id="zmD-TF-huI"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="72" estimatedRowHeight="-1" sectionHeaderHeight="32" sectionFooterHeight="16" translatesAutoresizingMaskIntoConstraints="NO" id="inE-vF-6bE">
+                                <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="CRi-W9-r8R" id="wLq-AI-ru9"/>
+                                    <outlet property="delegate" destination="CRi-W9-r8R" id="xVT-h8-1jB"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="inE-vF-6bE" firstAttribute="leading" secondItem="yTT-bB-ueQ" secondAttribute="leading" id="GIc-CY-gy9"/>
+                            <constraint firstItem="yTT-bB-ueQ" firstAttribute="trailing" secondItem="inE-vF-6bE" secondAttribute="trailing" id="M6U-Jk-Q0B"/>
                             <constraint firstItem="CNT-k5-w8Z" firstAttribute="top" secondItem="yTT-bB-ueQ" secondAttribute="top" id="aRf-UF-xt3"/>
+                            <constraint firstItem="yTT-bB-ueQ" firstAttribute="bottom" secondItem="inE-vF-6bE" secondAttribute="bottom" id="gdv-kB-0Pk"/>
+                            <constraint firstItem="inE-vF-6bE" firstAttribute="top" secondItem="CNT-k5-w8Z" secondAttribute="bottom" id="vBg-I8-mGn"/>
                             <constraint firstItem="CNT-k5-w8Z" firstAttribute="leading" secondItem="yTT-bB-ueQ" secondAttribute="leading" id="w1g-Bv-Zka"/>
                             <constraint firstItem="CNT-k5-w8Z" firstAttribute="trailing" secondItem="yTT-bB-ueQ" secondAttribute="trailing" id="zs3-fi-4hu"/>
                         </constraints>
@@ -538,6 +571,7 @@
                         <outlet property="buttonSearch" destination="qJp-ZW-YHf" id="t8j-Cn-Xut"/>
                         <outlet property="buttonSelect" destination="qb4-mA-nzQ" id="TYu-WT-N7J"/>
                         <outlet property="lableTitle" destination="gGv-bZ-Sjc" id="hBb-KZ-Khj"/>
+                        <outlet property="tableViewData" destination="inE-vF-6bE" id="hP3-sa-8lZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="inU-GW-jyq" userLabel="First Responder" sceneMemberID="firstResponder"/>

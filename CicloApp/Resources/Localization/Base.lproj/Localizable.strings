@@ -25,3 +25,7 @@
 "privacy_policy" = "Privacy policy";
 "imprint" = "Imprint";
 "app_version" = "App version";
+
+"on_device" = "ON DEVICE";
+"local" = "LOCAL";
+

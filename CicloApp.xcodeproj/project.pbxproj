@@ -21,6 +21,11 @@
 		3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CA205C297300038C2E /* AccountViewController.swift */; };
 		3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */; };
 		3B40FE98205C572500DE3F4B /* DeviceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B40FE97205C572500DE3F4B /* DeviceInfo.plist */; };
+		3B48F2FA205E928000CD74EA /* CATrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F2F9205E928000CD74EA /* CATrack.swift */; };
+		3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F2FB205E99C400CD74EA /* HistoryTableHeaderView.swift */; };
+		3B48F2FE205E99D800CD74EA /* HistoryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */; };
+		3B48F300205E9D9600CD74EA /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B48F2FF205E9D9600CD74EA /* HistoryTableViewCell.xib */; };
+		3B48F302205EA94200CD74EA /* CAProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F301205EA94200CD74EA /* CAProgress.swift */; };
 		3B730172205A793100691792 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730171205A793100691792 /* StartViewController.swift */; };
 		3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730173205A7FC900691792 /* WithoutAccountViewController.swift */; };
 		3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F2BB72059769700045E2B /* CAViewController.swift */; };
@@ -73,6 +78,11 @@
 		3B29F8CA205C297300038C2E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetLinkViewController.swift; sourceTree = "<group>"; };
 		3B40FE97205C572500DE3F4B /* DeviceInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceInfo.plist; sourceTree = "<group>"; };
+		3B48F2F9205E928000CD74EA /* CATrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATrack.swift; sourceTree = "<group>"; };
+		3B48F2FB205E99C400CD74EA /* HistoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableHeaderView.swift; sourceTree = "<group>"; };
+		3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableHeaderView.xib; sourceTree = "<group>"; };
+		3B48F2FF205E9D9600CD74EA /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		3B48F301205EA94200CD74EA /* CAProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProgress.swift; sourceTree = "<group>"; };
 		3B730171205A793100691792 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3B730173205A7FC900691792 /* WithoutAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAccountViewController.swift; sourceTree = "<group>"; };
 		3B7F2BB72059769700045E2B /* CAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +160,22 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		3B48F2F7205E926B00CD74EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3B48F2F8205E926B00CD74EA /* Categories */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B48F2F8205E926B00CD74EA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3B48F2F9205E928000CD74EA /* CATrack.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		3B730170205A791700691792 /* Account */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +207,7 @@
 				3B7F2BB9205976D100045E2B /* UIExtensions.swift */,
 				3B7F2BBF2059816600045E2B /* CAView.swift */,
 				3B7F2BC12059817C00045E2B /* CAButton.swift */,
+				3B48F301205EA94200CD74EA /* CAProgress.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -226,7 +253,10 @@
 		3B7F2BCB20598B2A00045E2B /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				3B48F2FB205E99C400CD74EA /* HistoryTableHeaderView.swift */,
+				3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */,
 				3B7F2BD62059925C00045E2B /* HistoryTableViewCell.swift */,
+				3B48F2FF205E9D9600CD74EA /* HistoryTableViewCell.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -294,6 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				3BF6A704205819B6004AD091 /* AppDelegate.swift */,
+				3B48F2F7205E926B00CD74EA /* Models */,
 				3B7F2BBB2059774600045E2B /* Managers */,
 				3BFB29B920585914005CB66C /* UserInterface */,
 				3BFB29C420585921005CB66C /* Resources */,
@@ -445,6 +476,7 @@
 				3B7F2BC92059841A00045E2B /* ConnectTableViewCell.xib in Resources */,
 				3BCF12B9205D8099003F5F2C /* SettingsLanguageTableViewCell.xib in Resources */,
 				3BF6A712205819B6004AD091 /* LaunchScreen.storyboard in Resources */,
+				3B48F300205E9D9600CD74EA /* HistoryTableViewCell.xib in Resources */,
 				3B0C13E2205ABE5800AB245F /* EditAccountTableViewCell.xib in Resources */,
 				3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */,
 				3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */,
@@ -453,6 +485,7 @@
 				3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */,
 				3BCF12B1205D7A39003F5F2C /* SettingsGeneralTableViewCell.xib in Resources */,
 				3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */,
+				3B48F2FE205E99D800CD74EA /* HistoryTableHeaderView.xib in Resources */,
 				3B0C13E6205AD78F00AB245F /* Register.plist in Resources */,
 				3BCF12A9205D7717003F5F2C /* Settings.plist in Resources */,
 				3B29F8C9205C280800038C2E /* ForgotPassword.plist in Resources */,
@@ -468,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */,
+				3B48F2FA205E928000CD74EA /* CATrack.swift in Sources */,
 				3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */,
 				3BCF12AB205D79B4003F5F2C /* SettingsTableViewCell.swift in Sources */,
 				3B0C13E4205AD75100AB245F /* RegisterViewController.swift in Sources */,
@@ -486,8 +520,10 @@
 				3BFB29C720585C4A005CB66C /* MainTabsViewController.swift in Sources */,
 				3B7F2BD72059925C00045E2B /* HistoryTableViewCell.swift in Sources */,
 				3B7F2BC82059841A00045E2B /* ConnectTableViewCell.swift in Sources */,
+				3B48F302205EA94200CD74EA /* CAProgress.swift in Sources */,
 				3BF6A707205819B6004AD091 /* ViewController.swift in Sources */,
 				3B0C13E1205ABE5800AB245F /* EditAccountTableViewCell.swift in Sources */,
+				3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */,
 				3BCF12B0205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift in Sources */,
 				3B7F2BD120598C8C00045E2B /* SettingsViewController.swift in Sources */,
 				3B7F2BBD2059775400045E2B /* Config.swift in Sources */,

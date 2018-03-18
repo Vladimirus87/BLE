@@ -95,7 +95,14 @@ extension UIColor {
         return .black
     }
     
-
-    
 }
 
+extension Date {
+    
+    func dateByAddingDays(_ day : Int) -> Date {
+        var dateComponent = DateComponents()
+        dateComponent.day = day
+        return Calendar.current.date(byAdding: dateComponent, to: self)!
+    }
+    
+}
