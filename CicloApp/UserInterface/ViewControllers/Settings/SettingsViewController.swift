@@ -13,10 +13,17 @@ class SettingsViewController: CAViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var tableViewData: UITableView!
     var data = [[String : String]]()
 
+    var dataName = "Settings";
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let pathData = Bundle.main.path(forResource: "Settings", ofType: "plist")
+        self.initWithData(dataName)
+    }
+    
+    func initWithData(_ fileName : String) {
+        
+        let pathData = Bundle.main.path(forResource: fileName, ofType: "plist")
         self.data = NSArray(contentsOfFile: pathData!) as! [[String : String]]
     
         var registered = [String]()
@@ -53,7 +60,7 @@ class SettingsViewController: CAViewController, UITableViewDelegate, UITableView
             fatalError("The dequeued cell is not an instance of \(cellIdentifier).")
         }
         
-        cell.updateWithData(data: item, (indexPath.row == (self.data.count - 1)))
+        cell.updateWithData(data: item)
         
         return cell
     }
@@ -62,9 +69,37 @@ class SettingsViewController: CAViewController, UITableViewDelegate, UITableView
         
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let item = self.data[indexPath.row]
+        
+        if item["type"] != "TextField" {
+            self.closeKeyboard()
+        }
+        
+        if let controllerName = item["controller"] {
+            if controllerName.count > 0 {
+                let controller = self.storyboard?.instantiateViewController(withIdentifier: controllerName)
+                self.navigationController?.pushViewController(controller!, animated: true)
+            }
+        }
+        
+    }
+    
+    // MARK: - Keyboard
+    
+    override func closeKeyboard() {
+        
+        let cells: [SettingsTableViewCell] = self.tableViewData.visibleCells as! [SettingsTableViewCell]
+        for cell in cells {
+            cell.closeKeyboard()
+        }
+        
     }
     
     // Mark: - Notifications
+    
+    override func updateLocalization() {
+        self.lableTitle.text = LS("settings")
+    }
     
     override func updateColorScheme() {
         super.updateColorScheme()

@@ -59,12 +59,12 @@
                     <constraint firstItem="MVd-iG-TGg" firstAttribute="top" secondItem="uh9-Gc-pn4" secondAttribute="bottom" constant="10" id="Rs8-6P-Dcn"/>
                     <constraint firstAttribute="trailing" secondItem="uh9-Gc-pn4" secondAttribute="trailing" constant="48" id="Xi6-i0-8BS"/>
                     <constraint firstItem="uh9-Gc-pn4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="afj-0D-svV"/>
-                    <constraint firstItem="PLh-OR-2aU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="64" id="c6Y-j8-efC"/>
                     <constraint firstItem="aRa-C5-3qh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="heu-0f-5dO"/>
                     <constraint firstItem="PLh-OR-2aU" firstAttribute="top" secondItem="MVd-iG-TGg" secondAttribute="bottom" constant="11" id="lHM-9Y-Zs4"/>
                     <constraint firstItem="WUM-fI-LKb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-36" id="nqD-07-bF8"/>
                     <constraint firstItem="MVd-iG-TGg" firstAttribute="trailing" secondItem="uh9-Gc-pn4" secondAttribute="trailing" id="pq6-z3-iYG"/>
                     <constraint firstItem="aRa-C5-3qh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="rMI-4o-231"/>
+                    <constraint firstItem="uh9-Gc-pn4" firstAttribute="leading" secondItem="PLh-OR-2aU" secondAttribute="leading" id="udO-ky-p6V"/>
                     <constraint firstAttribute="trailing" secondItem="PLh-OR-2aU" secondAttribute="trailing" id="vG6-GQ-lUa"/>
                     <constraint firstItem="MVd-iG-TGg" firstAttribute="leading" secondItem="uh9-Gc-pn4" secondAttribute="leading" id="xYW-c3-Bfj"/>
                 </constraints>
@@ -72,6 +72,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="constraintContent" destination="4QI-kb-8V8" id="X1B-KB-si2"/>
                 <outlet property="imageArrow" destination="WUM-fI-LKb" id="vWh-xd-bou"/>
                 <outlet property="imageIcon" destination="aRa-C5-3qh" id="H6Y-QM-jna"/>
                 <outlet property="labelSubTitle" destination="MVd-iG-TGg" id="Vgq-ti-XMr"/>

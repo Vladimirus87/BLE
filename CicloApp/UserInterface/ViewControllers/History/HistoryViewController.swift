@@ -94,6 +94,10 @@ class HistoryViewController: CAViewController, UITableViewDelegate, UITableViewD
     
     // Mark: - Notifications
     
+    override func updateLocalization() {
+        self.lableTitle.text = LS("history")
+    }
+    
     override func updateColorScheme() {
         super.updateColorScheme()
         

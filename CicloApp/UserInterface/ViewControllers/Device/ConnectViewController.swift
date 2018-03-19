@@ -78,7 +78,7 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
             
             self.progress = 0.0
             self.viewProgress.updateWithProgress(self.progress, width: 2.0, color: Config.shared.baseColor())
-            self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(animateTimer), userInfo: nil, repeats: true)
+            self.timer = Timer.scheduledTimer(timeInterval: 0.025, target: self, selector: #selector(animateTimer), userInfo: nil, repeats: true)
             
         }
         
@@ -88,11 +88,11 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
     
     @objc func animateTimer() {
         
-        self.progress += 0.1
-        self.viewProgress.updateWithProgress(self.progress / 5.0, width: 2.0, color: Config.shared.baseColor())
+        self.progress += 0.025
+        self.viewProgress.updateWithProgress(self.progress / 1.0, width: 2.0, color: Config.shared.baseColor())
         self.labelProgress.text = String(Int(self.progress))
         
-        if (self.progress >= 5.0) {
+        if (self.progress >= 1.0) {
             stopConnectTimer()
             self.performSegue(withIdentifier: "ShowDevice", sender: nil)
         }
@@ -114,6 +114,10 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
     }
     
     // Mark: - Notifications
+    
+    override func updateLocalization() {
+        self.lableTitle.text = LS("pair_with_device")
+    }
     
     override func updateColorScheme() {
         super.updateColorScheme()

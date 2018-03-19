@@ -56,7 +56,7 @@
                     <constraint firstItem="kJ0-LX-V9g" firstAttribute="leading" secondItem="uh9-Gc-pn4" secondAttribute="trailing" constant="8" id="IQQ-6V-58Q"/>
                     <constraint firstAttribute="bottom" secondItem="PLh-OR-2aU" secondAttribute="bottom" id="KgO-Gd-Gaj"/>
                     <constraint firstItem="uh9-Gc-pn4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="afj-0D-svV"/>
-                    <constraint firstItem="PLh-OR-2aU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="64" id="c6Y-j8-efC"/>
+                    <constraint firstItem="uh9-Gc-pn4" firstAttribute="leading" secondItem="PLh-OR-2aU" secondAttribute="leading" id="bE9-R3-c4q"/>
                     <constraint firstItem="aRa-C5-3qh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="heu-0f-5dO"/>
                     <constraint firstItem="aRa-C5-3qh" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="36" id="rMI-4o-231"/>
                     <constraint firstAttribute="trailing" secondItem="PLh-OR-2aU" secondAttribute="trailing" id="vG6-GQ-lUa"/>
@@ -66,6 +66,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="constraintContent" destination="4QI-kb-8V8" id="pEc-sF-yBN"/>
                 <outlet property="imageIcon" destination="aRa-C5-3qh" id="H6Y-QM-jna"/>
                 <outlet property="labelTitle" destination="uh9-Gc-pn4" id="kLj-Ay-MrW"/>
                 <outlet property="switchMode" destination="kJ0-LX-V9g" id="QD9-Qf-K3Q"/>

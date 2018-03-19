@@ -21,6 +21,18 @@
 		3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CA205C297300038C2E /* AccountViewController.swift */; };
 		3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */; };
 		3B40FE98205C572500DE3F4B /* DeviceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B40FE97205C572500DE3F4B /* DeviceInfo.plist */; };
+		3B478213206009A10013ADE4 /* DeviceGeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B478212206009A10013ADE4 /* DeviceGeneralViewController.swift */; };
+		3B47821520600B2B0013ADE4 /* DeviceGeneral.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B47821420600B2B0013ADE4 /* DeviceGeneral.plist */; };
+		3B478217206013800013ADE4 /* DeviceUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B478216206013800013ADE4 /* DeviceUserViewController.swift */; };
+		3B478219206014730013ADE4 /* DeviceUser.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B478218206014730013ADE4 /* DeviceUser.plist */; };
+		3B47821C206017C40013ADE4 /* SettingsTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47821A206017C30013ADE4 /* SettingsTextFieldTableViewCell.swift */; };
+		3B47821D206017C40013ADE4 /* SettingsTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B47821B206017C30013ADE4 /* SettingsTextFieldTableViewCell.xib */; };
+		3B47821F20601E640013ADE4 /* DeviceDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47821E20601E630013ADE4 /* DeviceDisplayViewController.swift */; };
+		3B47822120601E6E0013ADE4 /* DeviceDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47822020601E6E0013ADE4 /* DeviceDateTimeViewController.swift */; };
+		3B47822320601F180013ADE4 /* DeviceDisplay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B47822220601F180013ADE4 /* DeviceDisplay.plist */; };
+		3B47822520601F250013ADE4 /* DeviceDateTime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B47822420601F250013ADE4 /* DeviceDateTime.plist */; };
+		3B4782282060235E0013ADE4 /* SettingsSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4782262060235E0013ADE4 /* SettingsSliderTableViewCell.swift */; };
+		3B4782292060235E0013ADE4 /* SettingsSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4782272060235E0013ADE4 /* SettingsSliderTableViewCell.xib */; };
 		3B48F2FA205E928000CD74EA /* CATrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F2F9205E928000CD74EA /* CATrack.swift */; };
 		3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F2FB205E99C400CD74EA /* HistoryTableHeaderView.swift */; };
 		3B48F2FE205E99D800CD74EA /* HistoryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */; };
@@ -51,6 +63,9 @@
 		3BCF12B9205D8099003F5F2C /* SettingsLanguageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF12B7205D8098003F5F2C /* SettingsLanguageTableViewCell.xib */; };
 		3BCF12BC205D824B003F5F2C /* SettingsInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCF12BA205D824B003F5F2C /* SettingsInfoTableViewCell.swift */; };
 		3BCF12BD205D824B003F5F2C /* SettingsInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BCF12BB205D824B003F5F2C /* SettingsInfoTableViewCell.xib */; };
+		3BE10DE720600062004B82E1 /* DeviceSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE10DE620600062004B82E1 /* DeviceSettingsViewController.swift */; };
+		3BE10DE920600088004B82E1 /* DeviceSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BE10DE820600088004B82E1 /* DeviceSettings.plist */; };
+		3BE10DEB20600460004B82E1 /* DeviceInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BE10DEA20600460004B82E1 /* DeviceInfoTableViewCell.xib */; };
 		3BF6A705205819B6004AD091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6A704205819B6004AD091 /* AppDelegate.swift */; };
 		3BF6A707205819B6004AD091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6A706205819B6004AD091 /* ViewController.swift */; };
 		3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF6A708205819B6004AD091 /* Main.storyboard */; };
@@ -78,6 +93,18 @@
 		3B29F8CA205C297300038C2E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3B29F8CC205C371100038C2E /* ResetLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetLinkViewController.swift; sourceTree = "<group>"; };
 		3B40FE97205C572500DE3F4B /* DeviceInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceInfo.plist; sourceTree = "<group>"; };
+		3B478212206009A10013ADE4 /* DeviceGeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceGeneralViewController.swift; sourceTree = "<group>"; };
+		3B47821420600B2B0013ADE4 /* DeviceGeneral.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceGeneral.plist; sourceTree = "<group>"; };
+		3B478216206013800013ADE4 /* DeviceUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceUserViewController.swift; sourceTree = "<group>"; };
+		3B478218206014730013ADE4 /* DeviceUser.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceUser.plist; sourceTree = "<group>"; };
+		3B47821A206017C30013ADE4 /* SettingsTextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		3B47821B206017C30013ADE4 /* SettingsTextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		3B47821E20601E630013ADE4 /* DeviceDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDisplayViewController.swift; sourceTree = "<group>"; };
+		3B47822020601E6E0013ADE4 /* DeviceDateTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDateTimeViewController.swift; sourceTree = "<group>"; };
+		3B47822220601F180013ADE4 /* DeviceDisplay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceDisplay.plist; sourceTree = "<group>"; };
+		3B47822420601F250013ADE4 /* DeviceDateTime.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceDateTime.plist; sourceTree = "<group>"; };
+		3B4782262060235E0013ADE4 /* SettingsSliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSliderTableViewCell.swift; sourceTree = "<group>"; };
+		3B4782272060235E0013ADE4 /* SettingsSliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsSliderTableViewCell.xib; sourceTree = "<group>"; };
 		3B48F2F9205E928000CD74EA /* CATrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATrack.swift; sourceTree = "<group>"; };
 		3B48F2FB205E99C400CD74EA /* HistoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableHeaderView.swift; sourceTree = "<group>"; };
 		3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableHeaderView.xib; sourceTree = "<group>"; };
@@ -108,6 +135,9 @@
 		3BCF12B7205D8098003F5F2C /* SettingsLanguageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsLanguageTableViewCell.xib; sourceTree = "<group>"; };
 		3BCF12BA205D824B003F5F2C /* SettingsInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInfoTableViewCell.swift; sourceTree = "<group>"; };
 		3BCF12BB205D824B003F5F2C /* SettingsInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsInfoTableViewCell.xib; sourceTree = "<group>"; };
+		3BE10DE620600062004B82E1 /* DeviceSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSettingsViewController.swift; sourceTree = "<group>"; };
+		3BE10DE820600088004B82E1 /* DeviceSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceSettings.plist; sourceTree = "<group>"; };
+		3BE10DEA20600460004B82E1 /* DeviceInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceInfoTableViewCell.xib; sourceTree = "<group>"; };
 		3BF6A701205819B6004AD091 /* CicloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CicloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF6A704205819B6004AD091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF6A706205819B6004AD091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +186,11 @@
 			isa = PBXGroup;
 			children = (
 				3B40FE97205C572500DE3F4B /* DeviceInfo.plist */,
+				3BE10DE820600088004B82E1 /* DeviceSettings.plist */,
+				3B47821420600B2B0013ADE4 /* DeviceGeneral.plist */,
+				3B478218206014730013ADE4 /* DeviceUser.plist */,
+				3B47822220601F180013ADE4 /* DeviceDisplay.plist */,
+				3B47822420601F250013ADE4 /* DeviceDateTime.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -227,6 +262,11 @@
 				3B7F2BC3205983C600045E2B /* Subviews */,
 				3B7F2BC4205983E600045E2B /* ConnectViewController.swift */,
 				3B7F2BD220598F4D00045E2B /* DeviceViewController.swift */,
+				3BE10DE620600062004B82E1 /* DeviceSettingsViewController.swift */,
+				3B478212206009A10013ADE4 /* DeviceGeneralViewController.swift */,
+				3B478216206013800013ADE4 /* DeviceUserViewController.swift */,
+				3B47821E20601E630013ADE4 /* DeviceDisplayViewController.swift */,
+				3B47822020601E6E0013ADE4 /* DeviceDateTimeViewController.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -237,6 +277,7 @@
 				3B7F2BC62059841A00045E2B /* ConnectTableViewCell.swift */,
 				3B7F2BC72059841A00045E2B /* ConnectTableViewCell.xib */,
 				3B7F2BD42059922A00045E2B /* DeviceInfoTableViewCell.swift */,
+				3BE10DEA20600460004B82E1 /* DeviceInfoTableViewCell.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -283,6 +324,10 @@
 				3BCF12B7205D8098003F5F2C /* SettingsLanguageTableViewCell.xib */,
 				3BCF12BA205D824B003F5F2C /* SettingsInfoTableViewCell.swift */,
 				3BCF12BB205D824B003F5F2C /* SettingsInfoTableViewCell.xib */,
+				3B47821A206017C30013ADE4 /* SettingsTextFieldTableViewCell.swift */,
+				3B47821B206017C30013ADE4 /* SettingsTextFieldTableViewCell.xib */,
+				3B4782262060235E0013ADE4 /* SettingsSliderTableViewCell.swift */,
+				3B4782272060235E0013ADE4 /* SettingsSliderTableViewCell.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -471,14 +516,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0C13DE205ABDB700AB245F /* SignIn.plist in Resources */,
+				3B47822320601F180013ADE4 /* DeviceDisplay.plist in Resources */,
+				3B478219206014730013ADE4 /* DeviceUser.plist in Resources */,
+				3BE10DEB20600460004B82E1 /* DeviceInfoTableViewCell.xib in Resources */,
+				3B47821520600B2B0013ADE4 /* DeviceGeneral.plist in Resources */,
 				3B40FE98205C572500DE3F4B /* DeviceInfo.plist in Resources */,
 				3BCF12BD205D824B003F5F2C /* SettingsInfoTableViewCell.xib in Resources */,
 				3B7F2BC92059841A00045E2B /* ConnectTableViewCell.xib in Resources */,
 				3BCF12B9205D8099003F5F2C /* SettingsLanguageTableViewCell.xib in Resources */,
 				3BF6A712205819B6004AD091 /* LaunchScreen.storyboard in Resources */,
+				3B47821D206017C40013ADE4 /* SettingsTextFieldTableViewCell.xib in Resources */,
+				3BE10DE920600088004B82E1 /* DeviceSettings.plist in Resources */,
 				3B48F300205E9D9600CD74EA /* HistoryTableViewCell.xib in Resources */,
 				3B0C13E2205ABE5800AB245F /* EditAccountTableViewCell.xib in Resources */,
 				3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */,
+				3B47822520601F250013ADE4 /* DeviceDateTime.plist in Resources */,
 				3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */,
 				3BCF12B5205D7FAF003F5F2C /* SettingsModeTableViewCell.xib in Resources */,
 				3B29F8C4205C1EAF00038C2E /* HelveticaBQ-Bold.ttf in Resources */,
@@ -490,6 +542,7 @@
 				3BCF12A9205D7717003F5F2C /* Settings.plist in Resources */,
 				3B29F8C9205C280800038C2E /* ForgotPassword.plist in Resources */,
 				3B29F8C5205C1EAF00038C2E /* HelveticaBQ-Roman.ttf in Resources */,
+				3B4782292060235E0013ADE4 /* SettingsSliderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */,
+				3B478217206013800013ADE4 /* DeviceUserViewController.swift in Sources */,
 				3B48F2FA205E928000CD74EA /* CATrack.swift in Sources */,
 				3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */,
 				3BCF12AB205D79B4003F5F2C /* SettingsTableViewCell.swift in Sources */,
@@ -519,20 +573,26 @@
 				3B7F2BD52059922A00045E2B /* DeviceInfoTableViewCell.swift in Sources */,
 				3BFB29C720585C4A005CB66C /* MainTabsViewController.swift in Sources */,
 				3B7F2BD72059925C00045E2B /* HistoryTableViewCell.swift in Sources */,
+				3B478213206009A10013ADE4 /* DeviceGeneralViewController.swift in Sources */,
 				3B7F2BC82059841A00045E2B /* ConnectTableViewCell.swift in Sources */,
 				3B48F302205EA94200CD74EA /* CAProgress.swift in Sources */,
+				3BE10DE720600062004B82E1 /* DeviceSettingsViewController.swift in Sources */,
 				3BF6A707205819B6004AD091 /* ViewController.swift in Sources */,
 				3B0C13E1205ABE5800AB245F /* EditAccountTableViewCell.swift in Sources */,
 				3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */,
 				3BCF12B0205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift in Sources */,
 				3B7F2BD120598C8C00045E2B /* SettingsViewController.swift in Sources */,
+				3B47822120601E6E0013ADE4 /* DeviceDateTimeViewController.swift in Sources */,
 				3B7F2BBD2059775400045E2B /* Config.swift in Sources */,
 				3BF6A705205819B6004AD091 /* AppDelegate.swift in Sources */,
+				3B4782282060235E0013ADE4 /* SettingsSliderTableViewCell.swift in Sources */,
 				3B0C13E8205AE21F00AB245F /* MakeAccountViewController.swift in Sources */,
 				3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */,
 				3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */,
+				3B47821C206017C40013ADE4 /* SettingsTextFieldTableViewCell.swift in Sources */,
 				3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */,
 				3BCF12B8205D8099003F5F2C /* SettingsLanguageTableViewCell.swift in Sources */,
+				3B47821F20601E640013ADE4 /* DeviceDisplayViewController.swift in Sources */,
 				3B7F2BC22059817C00045E2B /* CAButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  SettingsGeneralTableViewCell.swift
+//  SettingsSliderTableViewCell.swift
 //  CicloApp
 //
 //  Created by Pavel Belevtsev on 17.03.2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsGeneralTableViewCell: SettingsTableViewCell {
+class SettingsSliderTableViewCell: SettingsTableViewCell {
 
     
     
@@ -19,8 +19,6 @@ class SettingsGeneralTableViewCell: SettingsTableViewCell {
 
     override func updateWithData(data: [String : String]) {
         super.updateWithData(data: data)
-        
-        self.imageArrow.image = UIImage.init(named: "forward")?.tint(with: Config.shared.textColor())
         
     }
     

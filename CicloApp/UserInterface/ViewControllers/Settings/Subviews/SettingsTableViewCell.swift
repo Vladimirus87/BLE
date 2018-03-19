@@ -22,18 +22,31 @@ class SettingsTableViewCell: UITableViewCell {
     @IBOutlet weak var imageIcon: UIImageView!
     @IBOutlet weak var imageArrow: UIImageView!
     @IBOutlet weak var viewDivider: UIView!
+    @IBOutlet weak var constraintContent: NSLayoutConstraint!
+    
+    var data: [String : String]?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    func updateWithData(data: [String : String], _ isLastItem : Bool) {
+    func updateWithData(data: [String : String]) {
         
-        self.imageIcon.image = UIImage.init(named: data["icon"]!)?.tint(with: Config.shared.textColor())
+        self.data = data
+        
+        if data["icon"] != nil {
+            self.imageIcon.image = UIImage.init(named: data["icon"]!)?.tint(with: Config.shared.textColor())
+            self.imageIcon.isHidden = false;
+            self.constraintContent.constant = 64.0;
+        } else {
+            self.imageIcon.isHidden = true;
+            self.constraintContent.constant = 24.0;
+        }
+        
         self.labelTitle.text = LS(data["title"]!)
         
-        self.viewDivider.isHidden = isLastItem
+        self.viewDivider.isHidden = (data["hide_divider"] != nil)
      
         self.labelTitle.textColor = Config.shared.textColor()
         if let labelSubTitle = self.labelSubTitle {
@@ -41,6 +54,11 @@ class SettingsTableViewCell: UITableViewCell {
         }
         
         self.viewDivider.backgroundColor = Config.shared.dividerColor()
+        self.layoutIfNeeded()
+        
+    }
+    
+    func closeKeyboard() {
         
     }
     

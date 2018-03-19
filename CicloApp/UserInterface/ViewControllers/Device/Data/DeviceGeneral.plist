@@ -4,25 +4,23 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>dark_mode</string>
-		<key>icon</key>
-		<string>icon_night</string>
-		<key>type</key>
-		<string>Mode</string>
-		<key>dark_mode</key>
-		<string>yes</string>
-		<key>controller</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>manage_account</string>
+		<string>user</string>
 		<key>icon</key>
 		<string>icon_person</string>
 		<key>type</key>
 		<string>General</string>
 		<key>controller</key>
-		<string></string>
+		<string>DeviceUserViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>display</string>
+		<key>icon</key>
+		<string>icon_display</string>
+		<key>type</key>
+		<string>General</string>
+		<key>controller</key>
+		<string>DeviceDisplayViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -35,50 +33,40 @@
 		<string>English</string>
 		<key>arrow</key>
 		<string>action_down</string>
-		<key>controller</key>
-		<string></string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>contact_support</string>
+		<string>units</string>
 		<key>icon</key>
-		<string>icon_support</string>
+		<string>icon_units</string>
 		<key>type</key>
-		<string>General</string>
-		<key>controller</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>privacy_policy</string>
-		<key>icon</key>
-		<string>icon_privacy</string>
-		<key>type</key>
-		<string>General</string>
-		<key>controller</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>imprint</string>
-		<key>icon</key>
-		<string>icon_legal</string>
-		<key>type</key>
-		<string>General</string>
-		<key>controller</key>
-		<string></string>
-	</dict>
-	<dict>
-		<key>title</key>
-		<string>app_version</string>
-		<key>icon</key>
-		<string>icon_info</string>
-		<key>type</key>
-		<string>Info</string>
+		<string>Language</string>
 		<key>value</key>
-		<string>v1.0.0</string>
+		<string>Metric</string>
+		<key>arrow</key>
+		<string>action_down</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>sounds</string>
+		<key>icon</key>
+		<string>icon_sound</string>
+		<key>type</key>
+		<string>Mode</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>date_time</string>
+		<key>icon</key>
+		<string>icon_date_time</string>
+		<key>type</key>
+		<string>Language</string>
+		<key>value</key>
+		<string>18.02.2018, 13:37</string>
+		<key>arrow</key>
+		<string>forward</string>
 		<key>controller</key>
-		<string></string>
+		<string>DeviceDateTimeViewController</string>
 		<key>hide_divider</key>
 		<string>yes</string>
 	</dict>

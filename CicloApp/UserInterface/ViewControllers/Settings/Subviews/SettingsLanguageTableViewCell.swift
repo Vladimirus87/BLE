@@ -15,10 +15,11 @@ class SettingsLanguageTableViewCell: SettingsTableViewCell {
         // Initialization code
     }
     
-    override func updateWithData(data: [String : String], _ isLastItem : Bool) {
-        super.updateWithData(data: data, isLastItem)
+    override func updateWithData(data: [String : String]) {
+        super.updateWithData(data: data)
         
-        self.imageArrow.image = UIImage.init(named: "action_down")?.tint(with: Config.shared.textColor())
+        self.imageArrow.image = UIImage.init(named: data["arrow"]!)?.tint(with: Config.shared.textColor())
+        self.labelSubTitle.text = data["value"]
         
     }
 

@@ -4,19 +4,19 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>device_settings</string>
+		<string>general</string>
 		<key>controller</key>
-		<string>DeviceSettingsViewController</string>
+		<string>DeviceGeneralViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>instruction_manual</string>
+		<string>profiles</string>
 		<key>controller</key>
 		<string></string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>accessories</string>
+		<string>views</string>
 		<key>controller</key>
 		<string></string>
 	</dict>

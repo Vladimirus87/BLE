@@ -1,39 +1,29 @@
 //
-//  DeviceViewController.swift
+//  DeviceSettingsViewController.swift
 //  CicloApp
 //
-//  Created by Pavel Belevtsev on 14.03.18.
+//  Created by Pavel Belevtsev on 19.03.2018.
 //  Copyright © 2018 Lindenvalley. All rights reserved.
 //
 
 import UIKit
 
-class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDataSource {
+class DeviceSettingsViewController: CAViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var buttonBack: UIButton!
+    
     @IBOutlet weak var tableViewData: UITableView!
     
     let cellIdentifier = "DeviceInfoTableViewCell"
     var data = [[String : String]]()
     
-    @IBOutlet weak var labelFirmware: UILabel!
-    @IBOutlet weak var labelFirmwareValue: UILabel!
-    
-    @IBOutlet weak var buttonUpdate: CAButton!
-    
-    @IBOutlet weak var labelMemory: UILabel!
-    @IBOutlet weak var labelMemoryValue: UILabel!
-    
-    @IBOutlet weak var buttonSync: CAButton!
-    @IBOutlet weak var buttonDisconnect: CAButton!
-    
-    @IBOutlet weak var labelPreferences: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let pathData = Bundle.main.path(forResource: "DeviceInfo", ofType: "plist")
+        let pathData = Bundle.main.path(forResource: "DeviceSettings", ofType: "plist")
         self.data = NSArray(contentsOfFile: pathData!) as! [[String : String]]
-    
+        
         self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
 
     }
@@ -80,9 +70,9 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
         
     }
     
-    // Mark: - Actions
+    // MARK: - Actions
     
-    @IBAction func buttonDisconnectPressed(_ sender: UIButton) {
+    @IBAction func buttonBackPressed(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
         
@@ -90,23 +80,15 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
     
     // Mark: - Notifications
     
+    override func updateLocalization() {
+        self.lableTitle.text = LS("device_settings")
+    }
+    
     override func updateColorScheme() {
         super.updateColorScheme()
         
-        self.tableViewData.backgroundColor = Config.shared.backgroundColor()
-        
-        self.labelFirmware.textColor = Config.shared.textColor()
-        self.labelFirmwareValue.textColor = Config.shared.subTextColor()
-        
-        self.buttonUpdate.tintColor = Config.shared.baseColor()
-        
-        self.labelMemory.textColor = Config.shared.textColor()
-        self.labelMemoryValue.textColor = Config.shared.subTextColor()
-        
-        self.buttonSync.backgroundColor = Config.shared.baseColor()
-        self.buttonDisconnect.tintColor = Config.shared.baseColor()
-        
-        self.labelPreferences.textColor = Config.shared.subTextColor()
+        self.buttonBack.tintColor = Config.shared.titleColor()
+        self.view.backgroundColor = Config.shared.backgroundColor()
         
     }
     

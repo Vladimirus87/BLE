@@ -6,9 +6,11 @@
   Copyright © 2018 Lindenvalley. All rights reserved.
 */
 
-"tab_device" = "Device";
-"tab_history" = "History";
-"tab_settings" = "Settings";
+"device" = "Device";
+"history" = "History";
+"settings" = "Settings";
+
+"pair_with_device" = "Pair with device";
 
 "email" = "Email";
 "password" = "Password";
@@ -28,4 +30,31 @@
 
 "on_device" = "ON DEVICE";
 "local" = "LOCAL";
+
+"general" = "General";
+"profiles" = "Profiles";
+"views" = "Views";
+
+"user" = "User";
+"display" = "Display";
+"units" = "Units";
+"sounds" = "Sounds";
+"date_time" = "Date & Time";
+
+"weight" = "Weight";
+"enter_your_weight" = "Please enter your weight";
+"height" = "Height";
+"enter_your_height" = "Please enter your height";
+"age" = "Age";
+"gender" = "Gender";
+
+"contrast" = "Contrast";
+"light_manager" = "Light manager";
+
+"date" = "Date";
+"time" = "Time";
+"synchronise_with_phone" = "synchronise with phone";
+
+
+
 

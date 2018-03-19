@@ -6,7 +6,7 @@
 		<key>image</key>
 		<string>tab_device</string>
 		<key>title</key>
-		<string>tab_device</string>
+		<string>device</string>
 		<key>controller</key>
 		<string>NavigationConnectViewController</string>
 	</dict>
@@ -14,7 +14,7 @@
 		<key>image</key>
 		<string>tab_list</string>
 		<key>title</key>
-		<string>tab_history</string>
+		<string>history</string>
 		<key>controller</key>
 		<string>HistoryViewController</string>
 	</dict>
@@ -22,7 +22,7 @@
 		<key>image</key>
 		<string>tab_settings</string>
 		<key>title</key>
-		<string>tab_settings</string>
+		<string>settings</string>
 		<key>controller</key>
 		<string>SettingsViewController</string>
 	</dict>

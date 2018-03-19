@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaBQ-Roman.ttf">
+            <string>HelveticaBQ-Roman</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeviceInfoTableViewCell" id="KGk-i7-Jjw" customClass="DeviceInfoTableViewCell" customModule="CicloApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="55.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZT-md-qFk">
+                        <rect key="frame" x="24" y="18" width="288" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forward" translatesAutoresizingMaskIntoConstraints="NO" id="wRB-eR-9QU">
+                        <rect key="frame" x="320.5" y="18" width="7" height="18"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMm-ll-YAf">
+                        <rect key="frame" x="24" y="54.5" width="336" height="1"/>
+                        <color key="backgroundColor" red="0.0" green="0.29803921568627451" blue="0.96078431372549022" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Fi2-9R-XWG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="YMm-ll-YAf" secondAttribute="trailing" id="1pR-3W-bU9"/>
+                    <constraint firstAttribute="bottom" secondItem="YMm-ll-YAf" secondAttribute="bottom" id="6I6-2h-2ju"/>
+                    <constraint firstItem="lZT-md-qFk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="8k6-hy-G7I"/>
+                    <constraint firstItem="wRB-eR-9QU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fgy-or-5oa"/>
+                    <constraint firstItem="YMm-ll-YAf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="Tcf-l9-F8V"/>
+                    <constraint firstItem="lZT-md-qFk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gnK-ZE-qxN"/>
+                    <constraint firstItem="wRB-eR-9QU" firstAttribute="leading" secondItem="lZT-md-qFk" secondAttribute="trailing" constant="8" id="pND-P1-L4A"/>
+                    <constraint firstItem="wRB-eR-9QU" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-36" id="wRS-4Z-svN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageArrow" destination="wRB-eR-9QU" id="Try-EF-nL1"/>
+                <outlet property="labelTitle" destination="lZT-md-qFk" id="dSj-vQ-Yut"/>
+                <outlet property="viewDivider" destination="YMm-ll-YAf" id="TgB-LJ-MTR"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="forward" width="7" height="18"/>
+    </resources>
+</document>

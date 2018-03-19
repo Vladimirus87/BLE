@@ -10,13 +10,17 @@ import UIKit
 
 class SettingsInfoTableViewCell: SettingsTableViewCell {
 
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    override func updateWithData(data: [String : String]) {
+        super.updateWithData(data: data)
+        
+        self.labelSubTitle.text = data["value"]
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
