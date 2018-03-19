@@ -21,8 +21,8 @@ class SettingsModeTableViewCell: SettingsTableViewCell {
         self.switchMode.layer.cornerRadius = 16
     }
 
-    override func updateWithData(data: [String : String]) {
-        super.updateWithData(data: data)
+    override func updateWithData(data: [String : String], object: NSObject?) {
+        super.updateWithData(data: data, object: object)
         
         if self.data!["dark_mode"] != nil {
             self.switchMode.isOn = (Config.shared.colorMode == .dark)

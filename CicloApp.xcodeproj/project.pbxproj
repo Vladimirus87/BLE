@@ -33,6 +33,12 @@
 		3B47822520601F250013ADE4 /* DeviceDateTime.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B47822420601F250013ADE4 /* DeviceDateTime.plist */; };
 		3B4782282060235E0013ADE4 /* SettingsSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4782262060235E0013ADE4 /* SettingsSliderTableViewCell.swift */; };
 		3B4782292060235E0013ADE4 /* SettingsSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4782272060235E0013ADE4 /* SettingsSliderTableViewCell.xib */; };
+		3B47824C2060519C0013ADE4 /* CAProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47824B2060519C0013ADE4 /* CAProfile.swift */; };
+		3B47824E2060529A0013ADE4 /* DeviceProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47824D2060529A0013ADE4 /* DeviceProfilesViewController.swift */; };
+		3B478251206052F10013ADE4 /* DeviceProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B47824F206052F10013ADE4 /* DeviceProfileTableViewCell.swift */; };
+		3B478252206052F10013ADE4 /* DeviceProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B478250206052F10013ADE4 /* DeviceProfileTableViewCell.xib */; };
+		3B478254206056980013ADE4 /* DeviceProfile.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B478253206056980013ADE4 /* DeviceProfile.plist */; };
+		3B4782562060586D0013ADE4 /* DeviceProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4782552060586D0013ADE4 /* DeviceProfileViewController.swift */; };
 		3B48F2FA205E928000CD74EA /* CATrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F2F9205E928000CD74EA /* CATrack.swift */; };
 		3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F2FB205E99C400CD74EA /* HistoryTableHeaderView.swift */; };
 		3B48F2FE205E99D800CD74EA /* HistoryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */; };
@@ -105,6 +111,12 @@
 		3B47822420601F250013ADE4 /* DeviceDateTime.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceDateTime.plist; sourceTree = "<group>"; };
 		3B4782262060235E0013ADE4 /* SettingsSliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSliderTableViewCell.swift; sourceTree = "<group>"; };
 		3B4782272060235E0013ADE4 /* SettingsSliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsSliderTableViewCell.xib; sourceTree = "<group>"; };
+		3B47824B2060519C0013ADE4 /* CAProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAProfile.swift; sourceTree = "<group>"; };
+		3B47824D2060529A0013ADE4 /* DeviceProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceProfilesViewController.swift; sourceTree = "<group>"; };
+		3B47824F206052F10013ADE4 /* DeviceProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceProfileTableViewCell.swift; sourceTree = "<group>"; };
+		3B478250206052F10013ADE4 /* DeviceProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceProfileTableViewCell.xib; sourceTree = "<group>"; };
+		3B478253206056980013ADE4 /* DeviceProfile.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DeviceProfile.plist; sourceTree = "<group>"; };
+		3B4782552060586D0013ADE4 /* DeviceProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceProfileViewController.swift; sourceTree = "<group>"; };
 		3B48F2F9205E928000CD74EA /* CATrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATrack.swift; sourceTree = "<group>"; };
 		3B48F2FB205E99C400CD74EA /* HistoryTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableHeaderView.swift; sourceTree = "<group>"; };
 		3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableHeaderView.xib; sourceTree = "<group>"; };
@@ -191,6 +203,7 @@
 				3B478218206014730013ADE4 /* DeviceUser.plist */,
 				3B47822220601F180013ADE4 /* DeviceDisplay.plist */,
 				3B47822420601F250013ADE4 /* DeviceDateTime.plist */,
+				3B478253206056980013ADE4 /* DeviceProfile.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -207,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				3B48F2F9205E928000CD74EA /* CATrack.swift */,
+				3B47824B2060519C0013ADE4 /* CAProfile.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -267,6 +281,8 @@
 				3B478216206013800013ADE4 /* DeviceUserViewController.swift */,
 				3B47821E20601E630013ADE4 /* DeviceDisplayViewController.swift */,
 				3B47822020601E6E0013ADE4 /* DeviceDateTimeViewController.swift */,
+				3B47824D2060529A0013ADE4 /* DeviceProfilesViewController.swift */,
+				3B4782552060586D0013ADE4 /* DeviceProfileViewController.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -278,6 +294,8 @@
 				3B7F2BC72059841A00045E2B /* ConnectTableViewCell.xib */,
 				3B7F2BD42059922A00045E2B /* DeviceInfoTableViewCell.swift */,
 				3BE10DEA20600460004B82E1 /* DeviceInfoTableViewCell.xib */,
+				3B47824F206052F10013ADE4 /* DeviceProfileTableViewCell.swift */,
+				3B478250206052F10013ADE4 /* DeviceProfileTableViewCell.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -515,6 +533,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B478252206052F10013ADE4 /* DeviceProfileTableViewCell.xib in Resources */,
 				3B0C13DE205ABDB700AB245F /* SignIn.plist in Resources */,
 				3B47822320601F180013ADE4 /* DeviceDisplay.plist in Resources */,
 				3B478219206014730013ADE4 /* DeviceUser.plist in Resources */,
@@ -532,6 +551,7 @@
 				3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */,
 				3B47822520601F250013ADE4 /* DeviceDateTime.plist in Resources */,
 				3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */,
+				3B478254206056980013ADE4 /* DeviceProfile.plist in Resources */,
 				3BCF12B5205D7FAF003F5F2C /* SettingsModeTableViewCell.xib in Resources */,
 				3B29F8C4205C1EAF00038C2E /* HelveticaBQ-Bold.ttf in Resources */,
 				3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */,
@@ -559,10 +579,12 @@
 				3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */,
 				3BCF12AB205D79B4003F5F2C /* SettingsTableViewCell.swift in Sources */,
 				3B0C13E4205AD75100AB245F /* RegisterViewController.swift in Sources */,
+				3B4782562060586D0013ADE4 /* DeviceProfileViewController.swift in Sources */,
 				3B7F2BC02059816600045E2B /* CAView.swift in Sources */,
 				3B7F2BD320598F4D00045E2B /* DeviceViewController.swift in Sources */,
 				3B7F2BBA205976D100045E2B /* UIExtensions.swift in Sources */,
 				3B29F8C7205C240A00038C2E /* ForgotViewController.swift in Sources */,
+				3B478251206052F10013ADE4 /* DeviceProfileTableViewCell.swift in Sources */,
 				3BF6A70D205819B6004AD091 /* CicloApp.xcdatamodeld in Sources */,
 				3BCF12B4205D7FAF003F5F2C /* SettingsModeTableViewCell.swift in Sources */,
 				3B730172205A793100691792 /* StartViewController.swift in Sources */,
@@ -582,6 +604,7 @@
 				3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */,
 				3BCF12B0205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift in Sources */,
 				3B7F2BD120598C8C00045E2B /* SettingsViewController.swift in Sources */,
+				3B47824C2060519C0013ADE4 /* CAProfile.swift in Sources */,
 				3B47822120601E6E0013ADE4 /* DeviceDateTimeViewController.swift in Sources */,
 				3B7F2BBD2059775400045E2B /* Config.swift in Sources */,
 				3BF6A705205819B6004AD091 /* AppDelegate.swift in Sources */,
@@ -590,6 +613,7 @@
 				3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */,
 				3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */,
 				3B47821C206017C40013ADE4 /* SettingsTextFieldTableViewCell.swift in Sources */,
+				3B47824E2060529A0013ADE4 /* DeviceProfilesViewController.swift in Sources */,
 				3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */,
 				3BCF12B8205D8099003F5F2C /* SettingsLanguageTableViewCell.swift in Sources */,
 				3B47821F20601E640013ADE4 /* DeviceDisplayViewController.swift in Sources */,

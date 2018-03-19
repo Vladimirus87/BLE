@@ -55,6 +55,11 @@
 "time" = "Time";
 "synchronise_with_phone" = "synchronise with phone";
 
+"profile" = "Profile";
+"profile_name" = "Profile name";
+"enter_profile_name" = "Please enter profile name";
+"bike_weight" = "Bike weight";
+"enter_bike_weight" = "Please enter bike weight";
+"wheel_diameter" = "Wheel diameter";
 
-
-
+"reset_to_default" = "reset to default";

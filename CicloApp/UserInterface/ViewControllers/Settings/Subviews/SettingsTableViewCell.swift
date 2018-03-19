@@ -31,8 +31,13 @@ class SettingsTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    
     func updateWithData(data: [String : String]) {
-        
+        self.updateWithData(data: data, object: nil)
+    }
+    
+    func updateWithData(data: [String : String], object: NSObject?) {
+
         self.data = data
         
         if data["icon"] != nil {

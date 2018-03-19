@@ -15,11 +15,17 @@ class SettingsLanguageTableViewCell: SettingsTableViewCell {
         // Initialization code
     }
     
-    override func updateWithData(data: [String : String]) {
-        super.updateWithData(data: data)
+    override func updateWithData(data: [String : String], object: NSObject?) {
+        super.updateWithData(data: data, object: object)
         
         self.imageArrow.image = UIImage.init(named: data["arrow"]!)?.tint(with: Config.shared.textColor())
         self.labelSubTitle.text = data["value"]
+        
+        if (object != nil) {
+            if let field = data["field"] {
+                self.labelSubTitle.text = object!.value(forKey: field) as? String
+            }
+        }
         
     }
 

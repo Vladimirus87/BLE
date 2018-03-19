@@ -18,13 +18,19 @@ class SettingsTextFieldTableViewCell: SettingsTableViewCell, UITextFieldDelegate
         // Initialization code
     }
 
-    override func updateWithData(data: [String : String]) {
-        super.updateWithData(data: data)
+    override func updateWithData(data: [String : String], object: NSObject?) {
+        super.updateWithData(data: data, object: object)
         
         self.labelTitle.textColor = Config.shared.subTextColor()
         self.textFieldValue.textColor = Config.shared.textColor()
         
         self.textFieldValue.placeholder = LS(data["placeholder"]!)
+        
+        if (object != nil) {
+            if let field = data["field"] {
+                self.textFieldValue.text = object!.value(forKey: field) as? String
+            }
+        }
         
     }
     

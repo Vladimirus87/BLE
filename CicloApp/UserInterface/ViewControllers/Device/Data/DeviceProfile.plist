@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>profile_name</string>
+		<key>type</key>
+		<string>TextField</string>
+		<key>placeholder</key>
+		<string>enter_profile_name</string>
+		<key>field</key>
+		<string>profileName</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>bike_weight</string>
+		<key>type</key>
+		<string>TextField</string>
+		<key>placeholder</key>
+		<string>enter_bike_weight</string>
+		<key>field</key>
+		<string>bikeWeight</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>wheel_diameter</string>
+		<key>type</key>
+		<string>Language</string>
+		<key>field</key>
+		<string>wheelDiameter</string>
+		<key>arrow</key>
+		<string>action_down</string>
+	</dict>
+</array>
+</plist>

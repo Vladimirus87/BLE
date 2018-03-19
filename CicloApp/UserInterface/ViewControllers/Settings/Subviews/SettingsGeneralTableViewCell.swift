@@ -17,8 +17,8 @@ class SettingsGeneralTableViewCell: SettingsTableViewCell {
         // Initialization code
     }
 
-    override func updateWithData(data: [String : String]) {
-        super.updateWithData(data: data)
+    override func updateWithData(data: [String : String], object: NSObject?) {
+        super.updateWithData(data: data, object: object)
         
         self.imageArrow.image = UIImage.init(named: "forward")?.tint(with: Config.shared.textColor())
         

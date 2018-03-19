@@ -17,8 +17,8 @@ class SettingsSliderTableViewCell: SettingsTableViewCell {
         // Initialization code
     }
 
-    override func updateWithData(data: [String : String]) {
-        super.updateWithData(data: data)
+    override func updateWithData(data: [String : String], object: NSObject?) {
+        super.updateWithData(data: data, object: object)
         
     }
     
