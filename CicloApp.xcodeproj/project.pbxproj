@@ -44,6 +44,9 @@
 		3B48F2FE205E99D800CD74EA /* HistoryTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */; };
 		3B48F300205E9D9600CD74EA /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B48F2FF205E9D9600CD74EA /* HistoryTableViewCell.xib */; };
 		3B48F302205EA94200CD74EA /* CAProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B48F301205EA94200CD74EA /* CAProgress.swift */; };
+		3B695655206278D200167103 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B695652206278D200167103 /* iTunesArtwork@1x.png */; };
+		3B695656206278D200167103 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B695653206278D200167103 /* iTunesArtwork@2x.png */; };
+		3B695657206278D200167103 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B695654206278D200167103 /* iTunesArtwork@3x.png */; };
 		3B730172205A793100691792 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730171205A793100691792 /* StartViewController.swift */; };
 		3B730174205A7FC900691792 /* WithoutAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B730173205A7FC900691792 /* WithoutAccountViewController.swift */; };
 		3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F2BB72059769700045E2B /* CAViewController.swift */; };
@@ -122,6 +125,9 @@
 		3B48F2FD205E99D800CD74EA /* HistoryTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableHeaderView.xib; sourceTree = "<group>"; };
 		3B48F2FF205E9D9600CD74EA /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 		3B48F301205EA94200CD74EA /* CAProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProgress.swift; sourceTree = "<group>"; };
+		3B695652206278D200167103 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		3B695653206278D200167103 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		3B695654206278D200167103 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		3B730171205A793100691792 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		3B730173205A7FC900691792 /* WithoutAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithoutAccountViewController.swift; sourceTree = "<group>"; };
 		3B7F2BB72059769700045E2B /* CAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +229,16 @@
 				3B47824B2060519C0013ADE4 /* CAProfile.swift */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		3B695651206278D200167103 /* iTunesArtwork */ = {
+			isa = PBXGroup;
+			children = (
+				3B695652206278D200167103 /* iTunesArtwork@1x.png */,
+				3B695653206278D200167103 /* iTunesArtwork@2x.png */,
+				3B695654206278D200167103 /* iTunesArtwork@3x.png */,
+			);
+			path = iTunesArtwork;
 			sourceTree = "<group>";
 		};
 		3B730170205A791700691792 /* Account */ = {
@@ -431,6 +447,7 @@
 		3BFB29C420585921005CB66C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3B695651206278D200167103 /* iTunesArtwork */,
 				3BEA45EC205C1A730002931F /* Fonts */,
 				3BFB29C920585E7D005CB66C /* Localization */,
 				3BF6A713205819B6004AD091 /* Info.plist */,
@@ -539,6 +556,7 @@
 				3B478219206014730013ADE4 /* DeviceUser.plist in Resources */,
 				3BE10DEB20600460004B82E1 /* DeviceInfoTableViewCell.xib in Resources */,
 				3B47821520600B2B0013ADE4 /* DeviceGeneral.plist in Resources */,
+				3B695655206278D200167103 /* iTunesArtwork@1x.png in Resources */,
 				3B40FE98205C572500DE3F4B /* DeviceInfo.plist in Resources */,
 				3BCF12BD205D824B003F5F2C /* SettingsInfoTableViewCell.xib in Resources */,
 				3B7F2BC92059841A00045E2B /* ConnectTableViewCell.xib in Resources */,
@@ -548,9 +566,11 @@
 				3BE10DE920600088004B82E1 /* DeviceSettings.plist in Resources */,
 				3B48F300205E9D9600CD74EA /* HistoryTableViewCell.xib in Resources */,
 				3B0C13E2205ABE5800AB245F /* EditAccountTableViewCell.xib in Resources */,
+				3B695657206278D200167103 /* iTunesArtwork@3x.png in Resources */,
 				3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */,
 				3B47822520601F250013ADE4 /* DeviceDateTime.plist in Resources */,
 				3BF6A70F205819B6004AD091 /* Assets.xcassets in Resources */,
+				3B695656206278D200167103 /* iTunesArtwork@2x.png in Resources */,
 				3B478254206056980013ADE4 /* DeviceProfile.plist in Resources */,
 				3BCF12B5205D7FAF003F5F2C /* SettingsModeTableViewCell.xib in Resources */,
 				3B29F8C4205C1EAF00038C2E /* HelveticaBQ-Bold.ttf in Resources */,
