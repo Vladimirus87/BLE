@@ -106,3 +106,17 @@ extension Date {
     }
     
 }
+
+
+
+
+extension UIActivityIndicatorView {
+    
+    convenience init(activityIndicatorStyle: UIActivityIndicatorViewStyle, color: UIColor, placeInTheCenterOf parentView: UIView) {
+        self.init(activityIndicatorStyle: activityIndicatorStyle)
+        center = parentView.center
+        self.color = color
+        self.isHidden = true
+        parentView.addSubview(self)
+    }
+}

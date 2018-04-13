@@ -12,7 +12,6 @@ class ForgotViewController: AccountViewController {
     
     @IBOutlet weak var viewHeader: UIView!
     @IBOutlet weak var imageHeader: UIImageView!
-    
     @IBOutlet weak var buttonSendLink: CAButton!
     
     
@@ -20,6 +19,7 @@ class ForgotViewController: AccountViewController {
         super.viewDidLoad()
 
         self.initWithData("ForgotPassword")
+
     }
 
     override func resizeSubviews() {
@@ -63,11 +63,38 @@ class ForgotViewController: AccountViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func resetPressed(_ sender: CAButton) {
+        
+        checkInternet()
+        
+        var email: String?
+
+        for item in self.data {
+            if item["title"] as? String == "email" {
+                email = item["value"] as? String
+            }
+        }
+
+        guard email != nil else {
+            return
+        }
+        
+        AccountApi.shared.resetPassword(for: email!, view: self.view) { (success) in
+            if success {
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: "toResetLink", sender: self)
+                }
+            } else {
+                self.alert(with: LS("ups"), message: LS("invalid_mail"), action: nil, comletion: nil)
+            }
+        }
+
+    }
     
     // MARK: - Navigation
  
     @IBAction func unwindFromCompleteDialog(segue:UIStoryboardSegue) {
-        
+
         dismiss(animated: false, completion: {
             DispatchQueue.main.async {
                 self.navigationController?.popViewController(animated: true)

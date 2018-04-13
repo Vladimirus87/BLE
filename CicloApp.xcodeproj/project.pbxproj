@@ -85,9 +85,15 @@
 		3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB29CA20585E7D005CB66C /* Localizable.strings */; };
 		3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB29CE20585F22005CB66C /* MainTabs.plist */; };
 		3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */; };
+		9480A918207F5A08007E901F /* AccountApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480A917207F5A08007E901F /* AccountApi.swift */; };
+		9480A91B207F5CBD007E901F /* CAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480A91A207F5CBD007E901F /* CAUser.swift */; };
+		94BF48912080B16800276CB8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48902080B16800276CB8 /* AlertViewController.swift */; };
+		94BF48942080EEB900276CB8 /* ViewControllersUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */; };
+		D700C0C0283A8007DC3092F5 /* Pods_CicloApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000228E48570032E55AB4726 /* Pods-CicloApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3B0C13D9205A8E3700AB245F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3B0C13DD205ABDB700AB245F /* SignIn.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SignIn.plist; sourceTree = "<group>"; };
 		3B0C13DF205ABE5800AB245F /* EditAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountTableViewCell.swift; sourceTree = "<group>"; };
@@ -168,6 +174,12 @@
 		3BFB29CB20585E7D005CB66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3BFB29CE20585F22005CB66C /* MainTabs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainTabs.plist; sourceTree = "<group>"; };
 		3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicloApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5C63587587F9ACCA7A4E63 /* Pods-CicloApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.release.xcconfig"; sourceTree = "<group>"; };
+		9480A917207F5A08007E901F /* AccountApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApi.swift; sourceTree = "<group>"; };
+		9480A91A207F5CBD007E901F /* CAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAUser.swift; sourceTree = "<group>"; };
+		94BF48902080B16800276CB8 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +187,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D700C0C0283A8007DC3092F5 /* Pods_CicloApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18649040B45C0AFF434CA67E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B0C13DB205ABD9300AB245F /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +283,8 @@
 			isa = PBXGroup;
 			children = (
 				3B7F2BB72059769700045E2B /* CAViewController.swift */,
+				94BF48902080B16800276CB8 /* AlertViewController.swift */,
+				94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -388,6 +411,8 @@
 			children = (
 				3BF6A703205819B6004AD091 /* CicloApp */,
 				3BF6A702205819B6004AD091 /* Products */,
+				413CDC083FFCA5C98E8CA71D /* Pods */,
+				18649040B45C0AFF434CA67E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -417,6 +442,7 @@
 				3B7F2BB62059767B00045E2B /* General */,
 				3BFB29BA20585914005CB66C /* Storyboards */,
 				3BFB29BF20585914005CB66C /* ViewControllers */,
+				9480A916207F5864007E901F /* NetworkService */,
 			);
 			path = UserInterface;
 			sourceTree = "<group>";
@@ -491,6 +517,32 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		413CDC083FFCA5C98E8CA71D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				000228E48570032E55AB4726 /* Pods-CicloApp.debug.xcconfig */,
+				8E5C63587587F9ACCA7A4E63 /* Pods-CicloApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9480A916207F5864007E901F /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				9480A919207F5BD8007E901F /* Models */,
+				9480A917207F5A08007E901F /* AccountApi.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		9480A919207F5BD8007E901F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9480A91A207F5CBD007E901F /* CAUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -498,9 +550,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF6A716205819B6004AD091 /* Build configuration list for PBXNativeTarget "CicloApp" */;
 			buildPhases = (
+				20E31F90A3CECAF26695B8FE /* [CP] Check Pods Manifest.lock */,
 				3BF6A6FD205819B6004AD091 /* Sources */,
 				3BF6A6FE205819B6004AD091 /* Frameworks */,
 				3BF6A6FF205819B6004AD091 /* Resources */,
+				88CE41FBE6AF37EDC1CB7E1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -518,7 +572,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Lindenvalley;
 				TargetAttributes = {
 					3BF6A700205819B6004AD091 = {
@@ -588,11 +642,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20E31F90A3CECAF26695B8FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CicloApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88CE41FBE6AF37EDC1CB7E1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BF6A6FD205819B6004AD091 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9480A918207F5A08007E901F /* AccountApi.swift in Sources */,
 				3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */,
 				3B478217206013800013ADE4 /* DeviceUserViewController.swift in Sources */,
 				3B48F2FA205E928000CD74EA /* CATrack.swift in Sources */,
@@ -609,6 +703,7 @@
 				3BCF12B4205D7FAF003F5F2C /* SettingsModeTableViewCell.swift in Sources */,
 				3B730172205A793100691792 /* StartViewController.swift in Sources */,
 				3B7F2BCF20598C0400045E2B /* HistoryViewController.swift in Sources */,
+				94BF48942080EEB900276CB8 /* ViewControllersUtils.swift in Sources */,
 				3BCF12BC205D824B003F5F2C /* SettingsInfoTableViewCell.swift in Sources */,
 				3B7F2BC5205983E600045E2B /* ConnectViewController.swift in Sources */,
 				3B0C13DA205A8E3800AB245F /* SignInViewController.swift in Sources */,
@@ -618,6 +713,7 @@
 				3B478213206009A10013ADE4 /* DeviceGeneralViewController.swift in Sources */,
 				3B7F2BC82059841A00045E2B /* ConnectTableViewCell.swift in Sources */,
 				3B48F302205EA94200CD74EA /* CAProgress.swift in Sources */,
+				9480A91B207F5CBD007E901F /* CAUser.swift in Sources */,
 				3BE10DE720600062004B82E1 /* DeviceSettingsViewController.swift in Sources */,
 				3BF6A707205819B6004AD091 /* ViewController.swift in Sources */,
 				3B0C13E1205ABE5800AB245F /* EditAccountTableViewCell.swift in Sources */,
@@ -634,6 +730,7 @@
 				3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */,
 				3B47821C206017C40013ADE4 /* SettingsTextFieldTableViewCell.swift in Sources */,
 				3B47824E2060529A0013ADE4 /* DeviceProfilesViewController.swift in Sources */,
+				94BF48912080B16800276CB8 /* AlertViewController.swift in Sources */,
 				3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */,
 				3BCF12B8205D8099003F5F2C /* SettingsLanguageTableViewCell.swift in Sources */,
 				3B47821F20601E640013ADE4 /* DeviceDisplayViewController.swift in Sources */,
@@ -685,6 +782,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -692,6 +790,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -742,6 +841,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -749,6 +849,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -780,6 +881,7 @@
 		};
 		3BF6A717205819B6004AD091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 000228E48570032E55AB4726 /* Pods-CicloApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -798,6 +900,7 @@
 		};
 		3BF6A718205819B6004AD091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5C63587587F9ACCA7A4E63 /* Pods-CicloApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

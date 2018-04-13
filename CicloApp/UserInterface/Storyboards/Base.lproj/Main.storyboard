@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wSm-Zr-yQd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wSm-Zr-yQd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,9 +16,6 @@
         </array>
         <array key="HelveticaBQ-Roman.ttf">
             <string>HelveticaBQ-Roman</string>
-        </array>
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
         </array>
     </customFonts>
     <scenes>
@@ -307,7 +304,7 @@
                                                     <rect key="frame" x="168" y="54" width="44" height="29"/>
                                                     <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="14"/>
                                                     <state key="normal" title="update">
-                                                        <color key="titleColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="titleColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isAvailable" value="NO"/>
@@ -351,7 +348,7 @@
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-T7-LAX" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                                     <rect key="frame" x="40" y="22" width="295" height="48"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="48" id="q2W-wt-BYK"/>
                                                     </constraints>
@@ -371,7 +368,7 @@
                                                         <constraint firstAttribute="height" constant="48" id="FBy-Vo-gQ7"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="14"/>
-                                                    <color key="tintColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <state key="normal" title="disconnect"/>
                                                     <connections>
                                                         <action selector="buttonDisconnectPressed:" destination="lYU-jL-NOR" eventType="touchUpInside" id="OrS-H5-bl5"/>
@@ -624,7 +621,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SJ-es-VuO" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                         <rect key="frame" x="24" y="120" width="327" height="48"/>
-                                        <color key="backgroundColor" red="0.0" green="0.29803921568627451" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="T6q-SW-gMY"/>
                                         </constraints>
@@ -715,7 +712,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwM-x7-Jlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="zgi-Kx-wVm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-129" y="-1402"/>
+            <point key="canvasLocation" x="-130" y="-1404"/>
         </scene>
         <!--Without Account View Controller-->
         <scene sceneID="5eE-1q-GbJ">
@@ -726,7 +723,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wa5-l4-XlP" customClass="CAView" customModule="CicloApp" customModuleProvider="target">
-                                <rect key="frame" x="31.5" y="81" width="312" height="526"/>
+                                <rect key="frame" x="31.5" y="80.5" width="312" height="526"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hero_image" translatesAutoresizingMaskIntoConstraints="NO" id="7tn-JF-bdx">
                                         <rect key="frame" x="0.0" y="0.0" width="312" height="224"/>
@@ -745,7 +742,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="You-Al-TdG" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                         <rect key="frame" x="16" y="470" width="128" height="32"/>
-                                        <color key="backgroundColor" red="0.0" green="0.29803921568627451" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="128" id="KCg-TR-7AS"/>
                                             <constraint firstAttribute="height" constant="32" id="uf6-oz-Ugz"/>
@@ -769,7 +766,7 @@
                                             <constraint firstAttribute="height" constant="32" id="y7B-Qf-PhR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="14"/>
-                                        <color key="tintColor" red="0.0" green="0.29803921568627451" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="contentEdgeInsets" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
                                         <state key="normal" title="continue"/>
                                         <userDefinedRuntimeAttributes>
@@ -790,7 +787,7 @@
                                                     <constraint firstAttribute="width" constant="48" id="Hcd-6a-u1a"/>
                                                     <constraint firstAttribute="height" constant="48" id="SUs-13-H9N"/>
                                                 </constraints>
-                                                <color key="tintColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="checkbox_clear"/>
                                                 <connections>
                                                     <action selector="buttonDontAskPressed:" destination="rLd-Dq-GHo" eventType="touchUpInside" id="Ob4-4B-9sX"/>
@@ -898,7 +895,7 @@
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBy-Rf-GlW" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                         <rect key="frame" x="24" y="184" width="327" height="48"/>
-                                        <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="1H5-1a-eTw"/>
                                         </constraints>
@@ -912,7 +909,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isAvailable" value="NO"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="OZd-ez-H9U" kind="show" id="crd-g5-EP9"/>
+                                            <action selector="SignInPressed:" destination="wK7-ef-oVP" eventType="touchUpInside" id="akF-yS-hbL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MW9-Xx-jM0" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
@@ -967,6 +964,7 @@
                     <connections>
                         <outlet property="buttonSignIn" destination="yBy-Rf-GlW" id="swR-je-QZb"/>
                         <outlet property="tableViewData" destination="GLI-xq-dvy" id="W2d-8P-rEC"/>
+                        <segue destination="OZd-ez-H9U" kind="show" identifier="ShowMainTabs" id="wqS-Q7-NjL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEb-yA-A4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1048,7 +1046,7 @@
                                         </view>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quz-ud-hRh" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                             <rect key="frame" x="24" y="72" width="327" height="48"/>
-                                            <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="48" id="6Nr-3N-0aU"/>
                                             </constraints>
@@ -1062,7 +1060,7 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isAvailable" value="NO"/>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <segue destination="OZd-ez-H9U" kind="show" id="0vv-oh-bRA"/>
+                                                <action selector="registerPressed:" destination="PXG-sj-3I4" eventType="touchUpInside" id="xl5-uY-nz7"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEH-gI-NuY" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
@@ -1148,7 +1146,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="80T-vY-0PN" customClass="CAView" customModule="CicloApp" customModuleProvider="target">
-                                <rect key="frame" x="31.5" y="94" width="312" height="500"/>
+                                <rect key="frame" x="31.5" y="93.5" width="312" height="500"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hero_image" translatesAutoresizingMaskIntoConstraints="NO" id="bqv-Nq-4hn">
                                         <rect key="frame" x="0.0" y="0.0" width="312" height="224"/>
@@ -1167,7 +1165,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cmx-5D-2n0" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                         <rect key="frame" x="88" y="436" width="136" height="32"/>
-                                        <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="7W4-CR-wrj"/>
                                             <constraint firstAttribute="width" constant="136" id="Lgy-aE-d4u"/>
@@ -1231,7 +1229,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfQ-CZ-AW3">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="56" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="esj-4x-Jzz">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
@@ -1241,7 +1239,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cave_of_forgetfulness" translatesAutoresizingMaskIntoConstraints="NO" id="XfI-s5-gC7">
-                                            <rect key="frame" x="0.0" y="50" width="375" height="267"/>
+                                            <rect key="frame" x="0.0" y="50" width="375" height="260"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1272,7 +1270,7 @@
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="useBorder" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                             <connections>
-                                                <segue destination="mtP-Ij-eWV" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="suV-JW-M94"/>
+                                                <action selector="resetPressed:" destination="AXV-OA-gjs" eventType="touchUpInside" id="ago-28-8ut"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -1338,6 +1336,7 @@
                         <outlet property="tableViewData" destination="esj-4x-Jzz" id="Wxm-Rn-QmX"/>
                         <outlet property="viewHeader" destination="Wmc-Gi-JGQ" id="to9-PT-4xy"/>
                         <segue destination="RHP-b0-J2o" kind="unwind" identifier="unwindFromCompleteDialog" unwindAction="unwindFromCompleteDialogWithSegue:" id="Xmy-QF-bDo"/>
+                        <segue destination="mtP-Ij-eWV" kind="presentation" identifier="toResetLink" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="2Bh-wI-uaq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4b-GR-lI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1354,7 +1353,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ll4-ok-bNf" customClass="CAView" customModule="CicloApp" customModuleProvider="target">
-                                <rect key="frame" x="31.5" y="111" width="312" height="466"/>
+                                <rect key="frame" x="31.5" y="110.5" width="312" height="466"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirm_image" translatesAutoresizingMaskIntoConstraints="NO" id="bXd-Yz-RHJ">
                                         <rect key="frame" x="0.0" y="0.0" width="312" height="224"/>
@@ -1373,7 +1372,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HP5-Cc-s1D" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                         <rect key="frame" x="88" y="402" width="136" height="32"/>
-                                        <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="136" id="Oaf-2X-wAj"/>
                                             <constraint firstAttribute="height" constant="32" id="gpT-iw-oYZ"/>
@@ -1760,8 +1759,8 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxc-Hz-5yN" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
-                                            <rect key="frame" x="117" y="24" width="140" height="32"/>
-                                            <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <rect key="frame" x="117.5" y="24" width="140" height="32"/>
+                                            <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="32" id="gan-5o-TUX"/>
                                             </constraints>
@@ -1944,8 +1943,8 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djR-cw-IGp" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
-                                            <rect key="frame" x="139.5" y="24" width="95" height="32"/>
-                                            <color key="backgroundColor" red="0.0" green="0.29803921570000003" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <rect key="frame" x="140" y="24" width="95" height="32"/>
+                                            <color key="backgroundColor" red="0.0" green="0.27058823529411763" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="32" id="ckQ-j0-mfR"/>
                                             </constraints>
@@ -2005,11 +2004,97 @@
             </objects>
             <point key="canvasLocation" x="3798" y="1549"/>
         </scene>
+        <!--Alert View Controller-->
+        <scene sceneID="FM1-YR-mZJ">
+            <objects>
+                <viewController storyboardIdentifier="AlertViewController" id="Are-Za-9j3" customClass="AlertViewController" customModule="CicloApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kAd-4p-aZm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvT-9A-zuT" customClass="CAView" customModule="CicloApp" customModuleProvider="target">
+                                <rect key="frame" x="31.5" y="92.5" width="312" height="502"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cave_of_forgetfulness" translatesAutoresizingMaskIntoConstraints="NO" id="mkW-5t-zGb">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="260"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resetlink sent!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9An-vU-iTM">
+                                        <rect key="frame" x="24" y="280" width="264" height="34"/>
+                                        <fontDescription key="fontDescription" name="HelveticaBQ-Bold" family="Helvetica BQ" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.70271236800000003" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should hear from us shortly. Please have an eye on your email inbox!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c20-JP-Nmj">
+                                        <rect key="frame" x="24" y="334" width="264" height="56"/>
+                                        <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.79525198060000002" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-Hv-vNK" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
+                                        <rect key="frame" x="88" y="438" width="136" height="32"/>
+                                        <color key="backgroundColor" red="0.0" green="0.27058823529999998" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="cmf-1e-n6M"/>
+                                            <constraint firstAttribute="width" constant="136" id="iYH-9M-f5I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                        <state key="normal" title="Ok"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="okPressed:" destination="Are-Za-9j3" eventType="touchUpInside" id="M6T-Vp-Acu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9An-vU-iTM" secondAttribute="trailing" constant="24" id="9KZ-1t-SH9"/>
+                                    <constraint firstItem="xkV-Hv-vNK" firstAttribute="centerX" secondItem="rvT-9A-zuT" secondAttribute="centerX" id="DCS-3Q-2Za"/>
+                                    <constraint firstItem="mkW-5t-zGb" firstAttribute="leading" secondItem="rvT-9A-zuT" secondAttribute="leading" id="EYt-10-bar"/>
+                                    <constraint firstItem="xkV-Hv-vNK" firstAttribute="top" secondItem="c20-JP-Nmj" secondAttribute="bottom" constant="48" id="Eav-9O-LPT"/>
+                                    <constraint firstItem="mkW-5t-zGb" firstAttribute="top" secondItem="rvT-9A-zuT" secondAttribute="top" id="Nho-Qr-79s"/>
+                                    <constraint firstItem="9An-vU-iTM" firstAttribute="leading" secondItem="rvT-9A-zuT" secondAttribute="leading" constant="24" id="Q27-bU-7bK"/>
+                                    <constraint firstAttribute="width" constant="312" id="QC0-gZ-ljr"/>
+                                    <constraint firstAttribute="trailing" secondItem="mkW-5t-zGb" secondAttribute="trailing" id="R1j-IK-Tsz"/>
+                                    <constraint firstAttribute="bottom" secondItem="xkV-Hv-vNK" secondAttribute="bottom" constant="32" id="R28-re-uCe"/>
+                                    <constraint firstItem="c20-JP-Nmj" firstAttribute="top" secondItem="9An-vU-iTM" secondAttribute="bottom" constant="20" id="SE2-bN-zxi"/>
+                                    <constraint firstItem="9An-vU-iTM" firstAttribute="top" secondItem="mkW-5t-zGb" secondAttribute="bottom" constant="20" id="ajo-Pb-4Bo"/>
+                                    <constraint firstItem="c20-JP-Nmj" firstAttribute="leading" secondItem="rvT-9A-zuT" secondAttribute="leading" constant="24" id="l2V-0S-JKw"/>
+                                    <constraint firstAttribute="trailing" secondItem="c20-JP-Nmj" secondAttribute="trailing" constant="24" id="lGW-sh-cCo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rvT-9A-zuT" firstAttribute="centerX" secondItem="QN6-4q-M0X" secondAttribute="centerX" id="2qT-vj-7pM"/>
+                            <constraint firstItem="rvT-9A-zuT" firstAttribute="centerY" secondItem="QN6-4q-M0X" secondAttribute="centerY" id="Q4v-4R-8W2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QN6-4q-M0X"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoLBL" destination="c20-JP-Nmj" id="FJ5-25-5yq"/>
+                        <outlet property="titleLBL" destination="9An-vU-iTM" id="SsR-zc-GR6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lke-Qy-ceX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="-2863"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background_login" width="360" height="640"/>
         <image name="backward" width="7" height="18"/>
-        <image name="cave_of_forgetfulness" width="360" height="267"/>
+        <image name="cave_of_forgetfulness" width="360" height="260"/>
         <image name="checkbox" width="18" height="18"/>
         <image name="checkbox_clear" width="18" height="18"/>
         <image name="confirm_image" width="312" height="224"/>
@@ -2021,6 +2106,6 @@
         <image name="tab_device" width="18" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0vv-oh-bRA"/>
+        <segue reference="PbO-46-yWn"/>
     </inferredMetricsTieBreakers>
 </document>

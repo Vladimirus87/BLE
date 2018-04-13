@@ -34,7 +34,7 @@ class Config: NSObject {
     
     func baseColor() -> UIColor {
         if (colorMode == .light) {
-            return UIColor.colorRGB("004CF5")
+            return UIColor.colorRGB("004595")//("004CF5")
         } else {
             return UIColor.colorRGB("6694F9")
         }
@@ -82,7 +82,7 @@ class Config: NSObject {
     
     func dividerColor() -> UIColor {
         if (colorMode == .light) {
-            return UIColor.colorRGB("004CF5", alpha: 0.1)
+            return UIColor.colorRGB("004595", alpha: 0.1)//("004CF5", alpha: 0.1)
         } else {
             return UIColor.colorRGB("FFFFFF", alpha: 0.2)
         }

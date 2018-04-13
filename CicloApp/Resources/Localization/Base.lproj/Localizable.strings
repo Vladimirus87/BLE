@@ -63,3 +63,16 @@
 "wheel_diameter" = "Wheel diameter";
 
 "reset_to_default" = "reset to default";
+
+//Alerts
+"ups" = "Ups...";
+"good" = "Good!";
+"error_connection" = "Error connecting to the Internet!";
+"incorrect_data" = "Incorrect data entered!";
+"paswords_not_equal" = "Passwords are not equal!";
+"someth_went_wrong" = "Something went wrong!";
+"confirm_email" = "Go to the mail and confirm the account";
+"invalid_mail" = "Invalid mailbox!";
+
+
+

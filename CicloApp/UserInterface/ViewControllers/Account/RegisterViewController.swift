@@ -12,6 +12,7 @@ class RegisterViewController: AccountViewController {
     
     @IBOutlet weak var buttonRegister: CAButton!
     @IBOutlet weak var buttonAgree: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,6 @@ class RegisterViewController: AccountViewController {
     override func dataValuesChecked(_ result : Bool!) {
         
         checkIsRegisterAvailable()
-        
     }
     
     func checkIsRegisterAvailable() {
@@ -48,9 +48,56 @@ class RegisterViewController: AccountViewController {
         checkIsRegisterAvailable()
     }
     
+    
     @IBAction func buttonBackPressed(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    @IBAction func registerPressed(_ sender: CAButton) {
+        
+        checkInternet()
+
+        var email: String?
+        var pass: String?
+        var repeatPass: String?
+
+        for item in self.data {
+            switch item["title"] as? String {
+            case "email": email = item["value"] as? String
+            case "password": pass = item["value"] as? String
+            case "retype_password": repeatPass = item["value"] as? String
+            default: break
+            }
+        }
+
+        guard (email != nil), (pass != nil), (repeatPass != nil) else {
+            return
+        }
+
+        guard pass == repeatPass else {
+            self.alert(with: LS("ups"), message: LS("paswords_not_equal"), action: nil, comletion: nil)
+            return
+        }
+        
+
+        let user = CAUser(email: email!, password: pass!, repeatPassword: repeatPass!)
+        
+        let _ = AccountApi.shared.register(user: user, view: self.view) { (sucsess) in
+            if sucsess {
+
+                DispatchQueue.main.async {
+                let controller = self.storyboard?.instantiateViewController(withIdentifier: "SignInViewController")
+                    self.alert(with: LS("good"), message: LS("confirm_email"), action: nil, comletion: self.navigationController?.pushViewController(controller!, animated: true))
+                }
+            } else {
+                self.alert(with: LS("ups"), message: LS("someth_went_wrong"), action: nil, comletion: nil)
+            }
+        }
+
+    }
+    
+    
     
     
     // MARK: -
@@ -60,16 +107,7 @@ class RegisterViewController: AccountViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
 }
 

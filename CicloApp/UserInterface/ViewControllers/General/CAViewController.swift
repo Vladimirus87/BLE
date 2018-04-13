@@ -28,6 +28,8 @@ class CAViewController: UIViewController, UIGestureRecognizerDelegate {
         
         self.updateColorScheme()
         
+        
+
     }
     
     deinit {
@@ -128,7 +130,41 @@ class CAViewController: UIViewController, UIGestureRecognizerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    func alert(with title: String?, message: String?, action: Void?, comletion: Void?){
+//        let alrtController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+//        let ok = UIAlertAction(title: "oK", style: .default) { _ in
+//            action
+//        }
+//        alrtController.addAction(ok)
+//        present(alrtController, animated: true, completion: {
+//            comletion
+//        })
+        
+        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "AlertViewController") as? AlertViewController {
+            controller.titleAlert = title
+            controller.infoLAlert = message
+            controller.action = action
+            
+            controller.modalTransitionStyle = .crossDissolve
+            controller.modalPresentationStyle = .overCurrentContext
+            
+            present(controller, animated: true, completion: { comletion })
+        }
+        
+    }
+    
+    
+    func checkInternet() {
+        let connect = AccountApi.shared.isConnectedToInternet()
+        if connect == false {
+            alert(with: LS("ups"), message: LS("error_connection"), action: nil, comletion: nil)
+        }
+    }
+    
 
+    
     /*
     // MARK: - Navigation
 
