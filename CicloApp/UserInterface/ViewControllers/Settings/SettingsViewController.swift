@@ -11,16 +11,18 @@ import UIKit
 class SettingsViewController: CAViewController, UITableViewDelegate, UITableViewDataSource, SettingsTableViewCellDelegate {
     
     @IBOutlet weak var tableViewData: UITableView!
+   
     var data = [[String : String]]()
+    var dataName = "Settings"
 
-    var dataName = "Settings";
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.initWithData(dataName)
     }
-    
+
+
     func initWithData(_ fileName : String) {
         
         let pathData = Bundle.main.path(forResource: fileName, ofType: "plist")
@@ -115,16 +117,6 @@ class SettingsViewController: CAViewController, UITableViewDelegate, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+
     
 }

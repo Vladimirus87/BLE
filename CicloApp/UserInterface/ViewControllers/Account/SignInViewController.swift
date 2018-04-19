@@ -18,6 +18,7 @@ class SignInViewController: AccountViewController {
         self.initWithData("SignIn")
     }
     
+    
     override func dataValuesChecked(_ result : Bool!) {
         self.buttonSignIn.isAvailable = result
     }

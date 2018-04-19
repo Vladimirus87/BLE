@@ -28,14 +28,26 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var labelPreferences: UILabel!
     
+    var idFirmware: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.labelFirmwareValue.text = "v\(AccountApi.shared.version)"
+        buttonUpdate.isHidden = true
+        
         let pathData = Bundle.main.path(forResource: "DeviceInfo", ofType: "plist")
         self.data = NSArray(contentsOfFile: pathData!) as! [[String : String]]
     
         self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
 
+        AccountApi.shared.findActualVersion { (success, id) in
+            if success {
+                self.idFirmware = id
+                self.buttonUpdate.isHidden = false
+            }
+        }
+        
     }
     
     
@@ -87,6 +99,23 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
         self.navigationController?.popViewController(animated: true)
         
     }
+    
+    @IBAction func updatePressed(_ sender: CAButton) {
+
+        guard let id = idFirmware else { return }
+            AccountApi.shared.getFirmware(id: id, view: self.view) { (success) in
+                if success {
+                    self.labelFirmwareValue.text = "v\(AccountApi.shared.version)"
+                    self.buttonUpdate.isHidden = true
+                    self.idFirmware = nil
+                    self.alert(with: "Success", message: "The latest version was downloaded", action: nil, comletion: nil)
+                } else {
+                    self.alert(with: "Download error!", message: nil, action: nil, comletion: nil)
+                }
+            }
+        
+    }
+    
     
     // Mark: - Notifications
     

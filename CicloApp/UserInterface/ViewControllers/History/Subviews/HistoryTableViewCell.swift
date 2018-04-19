@@ -11,6 +11,7 @@ import UIKit
 @objc protocol HistoryTableViewCellDelegate: class {
     
     func historyActionSelected(_ track :CATrack)
+    func historyDeleteSelected(_ track :CATrack)
     
 }
 
@@ -102,6 +103,14 @@ class HistoryTableViewCell: UITableViewCell {
         
         if self.delegate != nil {
             self.delegate?.historyActionSelected(self.track!)
+        }
+        
+    }
+    
+    @IBAction func buttonDeletePressed(_ sender: UIButton) {
+        
+        if self.delegate != nil {
+            self.delegate?.historyDeleteSelected(self.track!)
         }
         
     }

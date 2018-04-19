@@ -12,12 +12,14 @@ class RegisterViewController: AccountViewController {
     
     @IBOutlet weak var buttonRegister: CAButton!
     @IBOutlet weak var buttonAgree: UIButton!
-
+    @IBOutlet weak var agreeInfo: UILabel!
+    @IBOutlet weak var whyMakeAcc: CAButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         self.initWithData("Register")
+
     }
     
     override func dataValuesChecked(_ result : Bool!) {

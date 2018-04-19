@@ -8,13 +8,15 @@
 
 import UIKit
 
-class HistoryViewController: CAViewController, UITableViewDelegate, UITableViewDataSource, HistoryTableViewCellDelegate {
+class HistoryViewController: CAViewController, UITableViewDelegate, UITableViewDataSource, HistoryTableViewCellDelegate, UIDocumentInteractionControllerDelegate {
 
     @IBOutlet weak var buttonSelect: UIButton!
     @IBOutlet weak var buttonSearch: UIButton!
     
     var tracksOnDevice = [CATrack]()
     var tracksLocal = [CATrack]()
+    
+    var documentController: UIDocumentInteractionController!
     
     @IBOutlet weak var tableViewData: UITableView!
     
@@ -37,7 +39,6 @@ class HistoryViewController: CAViewController, UITableViewDelegate, UITableViewD
 
         self.tableViewData.register(UINib.init(nibName: headerIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier: headerIdentifier)
         self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
-
     }
     
     // MARK: - UITableView
@@ -79,8 +80,22 @@ class HistoryViewController: CAViewController, UITableViewDelegate, UITableViewD
     }
     
     // Mark: - HistoryTableViewCellDelegate
-        
+    
     func historyActionSelected(_ track :CATrack) {
+        let pngRepresentation = UIImageJPEGRepresentation(UIImage(named: "background_image")!, 0.9)
+        
+//        AccountApi.shared.upload(pngRepresentation!, filename: "background_image", view: self.view) { (success) in
+//            if success {
+//                track.trackState = .complete
+//                self.tableViewData.reloadData()
+//                self.alert(with: "Uploaded", message: nil, action: nil, comletion: nil)
+//            } else {
+//                track.trackState = .onDevice
+//                self.tableViewData.reloadData()
+//                self.alert(with: "Error", message: nil, action: nil, comletion: nil)
+//            }
+//        }
+        
         
         if (track.trackState == .onDevice) {
             track.trackState = .loading
@@ -88,8 +103,39 @@ class HistoryViewController: CAViewController, UITableViewDelegate, UITableViewD
         } else if (track.trackState == .loading) {
             track.trackState = .onDevice
             self.tableViewData.reloadData()
-        }
         
+        } else if (track.trackState == .local) {
+ 
+            let activityViewController = UIActivityViewController(activityItems: [pngRepresentation!], applicationActivities: nil)
+            
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            
+            //Проверить на ipad
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                if activityViewController.responds(to: #selector(getter: UIViewController.popoverPresentationController)) {
+                    activityViewController.popoverPresentationController?.sourceView = self.view
+                }
+            }
+            
+            self.present(activityViewController, animated: true, completion: nil)
+        }
+    }
+    
+    
+    func historyDeleteSelected(_ track :CATrack) {
+        if track.trackState == .local {
+            if let ind = tracksLocal.index(of: track) {
+                tracksLocal.remove(at: ind)
+                let indexP = IndexPath(row: ind, section: 1)
+                tableViewData.deleteRows(at: [indexP], with: .fade)
+            }
+        } else {
+            if let ind = tracksOnDevice.index(of: track) {
+                tracksOnDevice.remove(at: ind)
+                let indexP = IndexPath(row: ind, section: 0)
+                tableViewData.deleteRows(at: [indexP], with: .fade)
+            }
+        }
     }
     
     // Mark: - Notifications

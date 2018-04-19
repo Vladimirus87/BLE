@@ -85,8 +85,12 @@
 		3BFB29CC20585E7D005CB66C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB29CA20585E7D005CB66C /* Localizable.strings */; };
 		3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BFB29CE20585F22005CB66C /* MainTabs.plist */; };
 		3BFB29D120585FCC005CB66C /* MainTabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */; };
+		942F001320863DEC004A7942 /* Activity.fit in Resources */ = {isa = PBXBuildFile; fileRef = 942F001220863DEC004A7942 /* Activity.fit */; };
 		9480A918207F5A08007E901F /* AccountApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480A917207F5A08007E901F /* AccountApi.swift */; };
 		9480A91B207F5CBD007E901F /* CAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9480A91A207F5CBD007E901F /* CAUser.swift */; };
+		948C4C5B208662CF00422A6C /* SettingsManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C4C5A208662CF00422A6C /* SettingsManageAccountViewController.swift */; };
+		948C4C5D2086819F00422A6C /* ChangePassword.plist in Resources */ = {isa = PBXBuildFile; fileRef = 948C4C5C2086819F00422A6C /* ChangePassword.plist */; };
+		94A25C412087992D001A3460 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A25C402087992D001A3460 /* FileManager.swift */; };
 		94BF48912080B16800276CB8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48902080B16800276CB8 /* AlertViewController.swift */; };
 		94BF48942080EEB900276CB8 /* ViewControllersUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */; };
 		D700C0C0283A8007DC3092F5 /* Pods_CicloApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */; };
@@ -176,8 +180,12 @@
 		3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCollectionViewCell.swift; sourceTree = "<group>"; };
 		7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicloApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5C63587587F9ACCA7A4E63 /* Pods-CicloApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.release.xcconfig"; sourceTree = "<group>"; };
+		942F001220863DEC004A7942 /* Activity.fit */ = {isa = PBXFileReference; lastKnownFileType = file; path = Activity.fit; sourceTree = "<group>"; };
 		9480A917207F5A08007E901F /* AccountApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApi.swift; sourceTree = "<group>"; };
 		9480A91A207F5CBD007E901F /* CAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAUser.swift; sourceTree = "<group>"; };
+		948C4C5A208662CF00422A6C /* SettingsManageAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManageAccountViewController.swift; sourceTree = "<group>"; };
+		948C4C5C2086819F00422A6C /* ChangePassword.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ChangePassword.plist; sourceTree = "<group>"; };
+		94A25C402087992D001A3460 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		94BF48902080B16800276CB8 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,6 +225,7 @@
 				3B0C13DD205ABDB700AB245F /* SignIn.plist */,
 				3B0C13E5205AD78F00AB245F /* Register.plist */,
 				3B29F8C8205C280800038C2E /* ForgotPassword.plist */,
+				948C4C5C2086819F00422A6C /* ChangePassword.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -365,6 +374,7 @@
 				3BCF12A7205D7717003F5F2C /* Data */,
 				3BCF12A6205D770E003F5F2C /* Subviews */,
 				3B7F2BD020598C8C00045E2B /* SettingsViewController.swift */,
+				948C4C5A208662CF00422A6C /* SettingsManageAccountViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -473,6 +483,7 @@
 		3BFB29C420585921005CB66C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				942F001220863DEC004A7942 /* Activity.fit */,
 				3B695651206278D200167103 /* iTunesArtwork */,
 				3BEA45EC205C1A730002931F /* Fonts */,
 				3BFB29C920585E7D005CB66C /* Localization */,
@@ -531,6 +542,7 @@
 			children = (
 				9480A919207F5BD8007E901F /* Models */,
 				9480A917207F5A08007E901F /* AccountApi.swift */,
+				94A25C402087992D001A3460 /* FileManager.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -607,6 +619,7 @@
 				3B478252206052F10013ADE4 /* DeviceProfileTableViewCell.xib in Resources */,
 				3B0C13DE205ABDB700AB245F /* SignIn.plist in Resources */,
 				3B47822320601F180013ADE4 /* DeviceDisplay.plist in Resources */,
+				948C4C5D2086819F00422A6C /* ChangePassword.plist in Resources */,
 				3B478219206014730013ADE4 /* DeviceUser.plist in Resources */,
 				3BE10DEB20600460004B82E1 /* DeviceInfoTableViewCell.xib in Resources */,
 				3B47821520600B2B0013ADE4 /* DeviceGeneral.plist in Resources */,
@@ -628,6 +641,7 @@
 				3B478254206056980013ADE4 /* DeviceProfile.plist in Resources */,
 				3BCF12B5205D7FAF003F5F2C /* SettingsModeTableViewCell.xib in Resources */,
 				3B29F8C4205C1EAF00038C2E /* HelveticaBQ-Bold.ttf in Resources */,
+				942F001320863DEC004A7942 /* Activity.fit in Resources */,
 				3BF6A70A205819B6004AD091 /* Main.storyboard in Resources */,
 				3BCF12B1205D7A39003F5F2C /* SettingsGeneralTableViewCell.xib in Resources */,
 				3BFB29CF20585F22005CB66C /* MainTabs.plist in Resources */,
@@ -686,6 +700,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A25C412087992D001A3460 /* FileManager.swift in Sources */,
 				9480A918207F5A08007E901F /* AccountApi.swift in Sources */,
 				3B7F2BB82059769700045E2B /* CAViewController.swift in Sources */,
 				3B478217206013800013ADE4 /* DeviceUserViewController.swift in Sources */,
@@ -716,6 +731,7 @@
 				9480A91B207F5CBD007E901F /* CAUser.swift in Sources */,
 				3BE10DE720600062004B82E1 /* DeviceSettingsViewController.swift in Sources */,
 				3BF6A707205819B6004AD091 /* ViewController.swift in Sources */,
+				948C4C5B208662CF00422A6C /* SettingsManageAccountViewController.swift in Sources */,
 				3B0C13E1205ABE5800AB245F /* EditAccountTableViewCell.swift in Sources */,
 				3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */,
 				3BCF12B0205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift in Sources */,

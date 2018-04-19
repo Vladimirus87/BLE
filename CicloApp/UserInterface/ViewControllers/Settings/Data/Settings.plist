@@ -22,7 +22,7 @@
 		<key>type</key>
 		<string>General</string>
 		<key>controller</key>
-		<string></string>
+		<string>SettingsManageAccountViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>

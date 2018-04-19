@@ -15,10 +15,9 @@ class AccountViewController: CAViewController, UITableViewDelegate, UITableViewD
 
     let cellIdentifier = "EditAccountTableViewCell"
     var data = [NSMutableDictionary]()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     func initWithData(_ fileName : String) {
@@ -44,7 +43,6 @@ class AccountViewController: CAViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return self.data.count
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -54,7 +52,8 @@ class AccountViewController: CAViewController, UITableViewDelegate, UITableViewD
             fatalError("The dequeued cell is not an instance of \(cellIdentifier).")
         }
         
-        cell.delegate = self
+            cell.delegate = self
+        
         
         let item = self.data[indexPath.row]
         cell.updateWithData(data : item as! [String : String])

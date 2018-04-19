@@ -10,6 +10,8 @@ import UIKit
 
 class ResetLinkViewController: CAViewController {
 
+    var isManagedAccount = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,10 +23,15 @@ class ResetLinkViewController: CAViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backPressed(_ sender: CAButton) {
+        if isManagedAccount {
+            print("isManagedAccount")
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
     
     @IBAction func okPressed(_ sender: CAButton) {
         performSegue(withIdentifier: "unwindFromCompleteDialog", sender: self)
     }
-    
 
 }
