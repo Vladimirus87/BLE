@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wSm-Zr-yQd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CRi-W9-r8R">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -458,7 +458,7 @@
         <!--History View Controller-->
         <scene sceneID="1Iq-Jd-zO8">
             <objects>
-                <viewController storyboardIdentifier="HistoryViewController" id="CRi-W9-r8R" customClass="HistoryViewController" customModule="CicloApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoryViewController" extendedLayoutIncludesOpaqueBars="YES" id="CRi-W9-r8R" customClass="HistoryViewController" customModule="CicloApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tKU-K7-WoL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,6 +479,9 @@
                                             <constraint firstAttribute="width" constant="40" id="xac-2Q-QQJ"/>
                                         </constraints>
                                         <state key="normal" image="icon_select"/>
+                                        <connections>
+                                            <action selector="selectManyPressed:" destination="CRi-W9-r8R" eventType="touchUpInside" id="Ehd-SN-ag2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJp-ZW-YHf">
                                         <rect key="frame" x="319" y="36.5" width="40" height="40"/>
@@ -487,6 +490,9 @@
                                             <constraint firstAttribute="width" constant="40" id="ziZ-DR-8F1"/>
                                         </constraints>
                                         <state key="normal" image="icon_search"/>
+                                        <connections>
+                                            <action selector="serchPressed:" destination="CRi-W9-r8R" eventType="touchUpInside" id="nfW-Xc-4kf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

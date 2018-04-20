@@ -105,6 +105,12 @@ extension Date {
         return Calendar.current.date(byAdding: dateComponent, to: self)!
     }
     
+    func string(with format: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+    
 }
 
 

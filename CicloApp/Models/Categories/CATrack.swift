@@ -19,6 +19,7 @@ class CATrack: NSObject {
 
     var trackState: CATrackState?
     var date: Date?
+    var isChecked = false
     
     override init() {
         super.init()

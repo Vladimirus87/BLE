@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import BEMCheckBox
 
 @objc protocol HistoryTableViewCellDelegate: class {
     
     func historyActionSelected(_ track :CATrack)
     func historyDeleteSelected(_ track :CATrack)
-    
 }
 
 class HistoryTableViewCell: UITableViewCell {
@@ -25,11 +25,17 @@ class HistoryTableViewCell: UITableViewCell {
     @IBOutlet weak var viewProgress: CAProgress!
     @IBOutlet weak var buttonAction: UIButton!
     @IBOutlet weak var viewDivider: UIView!
+    @IBOutlet weak var checkbox: UIImageView!
+    @IBOutlet weak var leftConstantOfLbl: NSLayoutConstraint!
+    
     
     var track: CATrack?
     
     var timer: Timer?
     var progress: Double = 0.0
+    
+//    var isCheckboxPressed = false
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -107,6 +113,20 @@ class HistoryTableViewCell: UITableViewCell {
         
     }
     
+
+    
+    
+    
+    func checkboxPressed() {
+       
+        guard let currentTrack = track else { return }
+        
+        currentTrack.isChecked = !currentTrack.isChecked
+        let checkImg = currentTrack.isChecked ? UIImage(named: "icon_checkbox_on") : UIImage(named: "icon_checkbox_off")
+        checkbox.image = checkImg
+    }
+    
+
     @IBAction func buttonDeletePressed(_ sender: UIButton) {
         
         if self.delegate != nil {
@@ -115,10 +135,5 @@ class HistoryTableViewCell: UITableViewCell {
         
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 
 }

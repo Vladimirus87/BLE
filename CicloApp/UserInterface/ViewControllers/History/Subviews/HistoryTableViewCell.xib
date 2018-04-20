@@ -25,7 +25,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uh9-Gc-pn4">
-                        <rect key="frame" x="24" y="26.5" width="200" height="19"/>
+                        <rect key="frame" x="50" y="26.5" width="174" height="19"/>
                         <fontDescription key="fontDescription" name="HelveticaBQ-Roman" family="Helvetica BQ" pointSize="16"/>
                         <color key="textColor" white="0.0" alpha="0.80402728869999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -79,10 +79,17 @@
                             <action selector="buttonActionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Tez-54-da9"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_checkbox_off" translatesAutoresizingMaskIntoConstraints="NO" id="e4L-ZR-lhQ">
+                        <rect key="frame" x="8" y="22.5" width="27" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="GPW-1Z-dkw"/>
+                            <constraint firstAttribute="width" constant="27" id="Rd2-XM-jVL"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="uh9-Gc-pn4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="4QI-kb-8V8"/>
+                    <constraint firstItem="uh9-Gc-pn4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="4QI-kb-8V8"/>
                     <constraint firstAttribute="trailing" secondItem="1pf-EH-yBS" secondAttribute="trailing" constant="16" id="B7y-xE-wfK"/>
                     <constraint firstItem="1pf-EH-yBS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Er0-6L-Pkg"/>
                     <constraint firstItem="Wdl-fh-nBm" firstAttribute="centerX" secondItem="1pf-EH-yBS" secondAttribute="centerX" id="ICB-8A-1hJ"/>
@@ -92,6 +99,8 @@
                     <constraint firstItem="uh9-Gc-pn4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bUZ-jo-Rk1"/>
                     <constraint firstItem="PLh-OR-2aU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="c6Y-j8-efC"/>
                     <constraint firstItem="q9u-dr-jxL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eU3-bA-L6C"/>
+                    <constraint firstItem="e4L-ZR-lhQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="f4f-sW-8vT"/>
+                    <constraint firstItem="e4L-ZR-lhQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="nz3-eh-ygL"/>
                     <constraint firstAttribute="trailing" secondItem="PLh-OR-2aU" secondAttribute="trailing" id="vG6-GQ-lUa"/>
                     <constraint firstItem="1pf-EH-yBS" firstAttribute="leading" secondItem="q9u-dr-jxL" secondAttribute="trailing" constant="4" id="xd5-SY-04a"/>
                 </constraints>
@@ -101,7 +110,9 @@
             <connections>
                 <outlet property="buttonAction" destination="1pf-EH-yBS" id="5hD-hG-4he"/>
                 <outlet property="buttonTrashcan" destination="q9u-dr-jxL" id="rE8-9T-vYZ"/>
+                <outlet property="checkbox" destination="e4L-ZR-lhQ" id="xBp-Wk-vJ5"/>
                 <outlet property="labelTitle" destination="uh9-Gc-pn4" id="xoz-Hr-Olk"/>
+                <outlet property="leftConstantOfLbl" destination="4QI-kb-8V8" id="SA2-HW-QDI"/>
                 <outlet property="viewAction" destination="Wdl-fh-nBm" id="m3T-Mg-BbS"/>
                 <outlet property="viewDivider" destination="PLh-OR-2aU" id="6mj-6r-fa1"/>
                 <outlet property="viewProgress" destination="Avq-Yk-nx7" id="968-Eu-6Nu"/>
@@ -109,6 +120,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="icon_checkbox_off" width="24" height="24"/>
         <image name="icon_download" width="24" height="24"/>
         <image name="icon_trashcan" width="24" height="24"/>
     </resources>

@@ -6,6 +6,7 @@ target 'CicloApp' do
   use_frameworks!
 
   # Pods for CicloApp
-	pod 'Alamofire'
+	pod 'Alamofire', '~> 4.7'
+	pod 'BEMCheckBox'
  
 end
