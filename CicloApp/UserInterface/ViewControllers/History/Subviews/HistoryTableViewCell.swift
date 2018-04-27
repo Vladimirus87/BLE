@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import BEMCheckBox
 
 @objc protocol HistoryTableViewCellDelegate: class {
     

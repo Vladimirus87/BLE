@@ -33,7 +33,7 @@ class ConnectTableViewCell: UITableViewCell {
         self.labelTitle.textColor = (Config.shared.colorMode == .light) ? .black : .white
         self.buttonPair.backgroundColor = Config.shared.baseColor()
         self.viewDivider.backgroundColor = Config.shared.dividerColor()
-        
+        labelTitle.text = (value as? String) ?? "HAC1.2"
     }
     
     @IBAction func buttonPairPressed(_ sender: UIButton) {

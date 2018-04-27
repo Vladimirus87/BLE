@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreBluetooth
 
 class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewDataSource, ConnectTableViewCellDelegate {
 
@@ -17,25 +18,45 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableViewData: UITableView!
     
     let cellIdentifier = "ConnectTableViewCell"
-    
     var timer: Timer?
     var progress: Double = 0.0
     
+    var connector: BLEConnector!
+    var subscribedCentrals = [CBCentral](){
+        didSet{
+            tableViewData.reloadData()
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        connector = BLEConnector(advertisingIdentifier: UIDevice.current.name)
+        connector.delegate = self
+        connector.setUpService()
+        
         self.viewConnect.isHidden = true
         self.tableViewData.register(UINib.init(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
-
-        // Do any additional setup after loading the view.
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            let connectStatus = self.connector.startAdvertisingNavigationService()
+            print("connectStatus", connectStatus)
+        }
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
         self.stopConnectTimer()
-        
     }
+    
     // MARK: - UITableView
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,7 +65,7 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return subscribedCentrals.count
         
     }
     
@@ -53,6 +74,8 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ConnectTableViewCell  else {
             fatalError("The dequeued cell is not an instance of \(cellIdentifier).")
         }
+        
+        
         
         cell.delegate = self
         cell.updateWithData(value: nil, (indexPath.row == 2))
@@ -137,16 +160,18 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension ConnectViewController: BLEConnectorDelegate {
+    func centralDidSubscribedToCharacteristic(_ central: CBCentral) {
+        self.subscribedCentrals.append(central)
     }
-    */
-
+    
+    func centralDidUnsubscribedToCharacteristic(_ central: CBCentral) {
+        if let index = self.subscribedCentrals.index(of: central) {
+            self.subscribedCentrals.remove(at: index)
+        }
+    }
+    
 }

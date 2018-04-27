@@ -7,6 +7,6 @@ target 'CicloApp' do
 
   # Pods for CicloApp
 	pod 'Alamofire', '~> 4.7'
-	pod 'BEMCheckBox'
+
  
 end
