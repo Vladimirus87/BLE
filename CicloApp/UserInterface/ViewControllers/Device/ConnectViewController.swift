@@ -14,7 +14,6 @@ class ConnectViewController: CAViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var viewConnect: UIView!
     @IBOutlet weak var viewProgress: CAProgress!
     @IBOutlet weak var labelProgress: UILabel!
-    
     @IBOutlet weak var tableViewData: UITableView!
     
     let cellIdentifier = "ConnectTableViewCell"

@@ -33,8 +33,8 @@ public class BLEConnector: NSObject {
     
     let advertisingIdentifier: String
     let restoreIdentifier = "FFFFF"
-    let serviceUUID = "71C1E128-D92F-4FA8-A2B2-0F171DB3436C"
-    let serviceCharacteristicUUID = "503DD605-9BCB-4F6E-B235-270A57483026"
+    let serviceUUID = "d048fdd0-d8b4-9a07-322c-984543634a20"
+    let serviceCharacteristicUUID = "7b8d2f07-2e7a-ba62-ef67-a7dda395541c"
     
     var peripheralManager : CBPeripheralManager?
     var myService : CBMutableService?
