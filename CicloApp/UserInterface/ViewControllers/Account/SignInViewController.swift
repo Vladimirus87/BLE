@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Crashlytics
+
 
 class SignInViewController: AccountViewController {
 
@@ -16,8 +18,11 @@ class SignInViewController: AccountViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initWithData("SignIn")
+
     }
     
+
+
     
     override func dataValuesChecked(_ result : Bool!) {
         self.buttonSignIn.isAvailable = result

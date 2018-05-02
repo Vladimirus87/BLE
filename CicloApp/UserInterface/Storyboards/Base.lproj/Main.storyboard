@@ -185,12 +185,30 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K5-21-lIc" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.26998817920684814" blue="0.58578842878341675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="reload"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="reloadBtnPressed:" destination="Bb0-sr-eY2" eventType="touchUpInside" id="H4y-NO-DFL"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="7K5-21-lIc" secondAttribute="bottom" id="M5v-LK-Shs"/>
+                                            <constraint firstAttribute="trailing" secondItem="7K5-21-lIc" secondAttribute="trailing" id="VKR-hQ-j0o"/>
                                             <constraint firstAttribute="height" constant="48" id="faj-mE-3vY"/>
                                             <constraint firstAttribute="width" constant="48" id="hjM-7e-NdL"/>
+                                            <constraint firstItem="7K5-21-lIc" firstAttribute="top" secondItem="wXR-z0-X32" secondAttribute="top" id="if2-9n-mIy"/>
                                             <constraint firstItem="rQC-FN-dZ8" firstAttribute="centerY" secondItem="wXR-z0-X32" secondAttribute="centerY" id="rVT-sJ-y1D"/>
+                                            <constraint firstItem="7K5-21-lIc" firstAttribute="leading" secondItem="wXR-z0-X32" secondAttribute="leading" id="tbQ-8S-pGa"/>
                                             <constraint firstItem="rQC-FN-dZ8" firstAttribute="centerX" secondItem="wXR-z0-X32" secondAttribute="centerX" id="xA3-lY-ksT"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -236,6 +254,7 @@
                     <connections>
                         <outlet property="labelProgress" destination="rQC-FN-dZ8" id="X4Q-6w-e0d"/>
                         <outlet property="lableTitle" destination="A8J-Ce-4HA" id="Wr3-PG-eT1"/>
+                        <outlet property="reloadBtn" destination="7K5-21-lIc" id="7qJ-JV-C5O"/>
                         <outlet property="tableViewData" destination="t0s-E4-JIy" id="TdN-N8-CKk"/>
                         <outlet property="viewConnect" destination="wXR-z0-X32" id="6ii-3h-kBK"/>
                         <outlet property="viewProgress" destination="M20-fb-rzD" id="PRA-28-dnd"/>
@@ -363,6 +382,9 @@
                                                             <real key="value" value="24"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="syncBtnPressed:" destination="lYU-jL-NOR" eventType="touchUpInside" id="fJI-gY-Rnx"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSC-sj-1Dx" customClass="CAButton" customModule="CicloApp" customModuleProvider="target">
                                                     <rect key="frame" x="40" y="78" width="295" height="48"/>
@@ -2271,6 +2293,7 @@
         <image name="icon_select" width="24" height="24"/>
         <image name="logo" width="110" height="21"/>
         <image name="product_picture_big" width="133" height="194"/>
+        <image name="reload" width="24" height="24"/>
         <image name="tab_device" width="18" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>

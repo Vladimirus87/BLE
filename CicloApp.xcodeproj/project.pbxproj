@@ -91,9 +91,10 @@
 		948C4C5B208662CF00422A6C /* SettingsManageAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C4C5A208662CF00422A6C /* SettingsManageAccountViewController.swift */; };
 		948C4C5D2086819F00422A6C /* ChangePassword.plist in Resources */ = {isa = PBXBuildFile; fileRef = 948C4C5C2086819F00422A6C /* ChangePassword.plist */; };
 		94A25C412087992D001A3460 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A25C402087992D001A3460 /* FileManager.swift */; };
+		94B0BE1720986CBE00814DA0 /* BLEPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B0BE1620986CBE00814DA0 /* BLEPeripheral.swift */; };
 		94BF48912080B16800276CB8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48902080B16800276CB8 /* AlertViewController.swift */; };
 		94BF48942080EEB900276CB8 /* ViewControllersUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */; };
-		94FFE3292093259D00BC3078 /* BLEConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FFE3282093259D00BC3078 /* BLEConnector.swift */; };
+		94CD460920973808002BFFB7 /* BLEDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CD460820973808002BFFB7 /* BLEDataModel.swift */; };
 		D700C0C0283A8007DC3092F5 /* Pods_CicloApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -187,9 +188,10 @@
 		948C4C5A208662CF00422A6C /* SettingsManageAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManageAccountViewController.swift; sourceTree = "<group>"; };
 		948C4C5C2086819F00422A6C /* ChangePassword.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ChangePassword.plist; sourceTree = "<group>"; };
 		94A25C402087992D001A3460 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		94B0BE1620986CBE00814DA0 /* BLEPeripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPeripheral.swift; sourceTree = "<group>"; };
 		94BF48902080B16800276CB8 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersUtils.swift; sourceTree = "<group>"; };
-		94FFE3282093259D00BC3078 /* BLEConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEConnector.swift; sourceTree = "<group>"; };
+		94CD460820973808002BFFB7 /* BLEDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -561,7 +563,8 @@
 		94FFE3272093235E00BC3078 /* BLE */ = {
 			isa = PBXGroup;
 			children = (
-				94FFE3282093259D00BC3078 /* BLEConnector.swift */,
+				94CD460820973808002BFFB7 /* BLEDataModel.swift */,
+				94B0BE1620986CBE00814DA0 /* BLEPeripheral.swift */,
 			);
 			path = BLE;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				3BF6A6FE205819B6004AD091 /* Frameworks */,
 				3BF6A6FF205819B6004AD091 /* Resources */,
 				88CE41FBE6AF37EDC1CB7E1E /* [CP] Embed Pods Frameworks */,
+				94781EF320998F72006476CD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -704,6 +708,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		94781EF320998F72006476CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 64badab75fd141d16b4333ea5c76f12b3052b1d3 85743bb7d1f11b6e076ded5692843a6fe7afeb11f4d83d2a0b5fd9ddf71ec420";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -718,7 +735,6 @@
 				3B48F2FA205E928000CD74EA /* CATrack.swift in Sources */,
 				3B29F8CB205C297300038C2E /* AccountViewController.swift in Sources */,
 				3BCF12AB205D79B4003F5F2C /* SettingsTableViewCell.swift in Sources */,
-				94FFE3292093259D00BC3078 /* BLEConnector.swift in Sources */,
 				3B0C13E4205AD75100AB245F /* RegisterViewController.swift in Sources */,
 				3B4782562060586D0013ADE4 /* DeviceProfileViewController.swift in Sources */,
 				3B7F2BC02059816600045E2B /* CAView.swift in Sources */,
@@ -744,6 +760,7 @@
 				3BE10DE720600062004B82E1 /* DeviceSettingsViewController.swift in Sources */,
 				3BF6A707205819B6004AD091 /* ViewController.swift in Sources */,
 				948C4C5B208662CF00422A6C /* SettingsManageAccountViewController.swift in Sources */,
+				94B0BE1720986CBE00814DA0 /* BLEPeripheral.swift in Sources */,
 				3B0C13E1205ABE5800AB245F /* EditAccountTableViewCell.swift in Sources */,
 				3B48F2FC205E99C400CD74EA /* HistoryTableHeaderView.swift in Sources */,
 				3BCF12B0205D7A39003F5F2C /* SettingsGeneralTableViewCell.swift in Sources */,
@@ -760,6 +777,7 @@
 				3B47824E2060529A0013ADE4 /* DeviceProfilesViewController.swift in Sources */,
 				94BF48912080B16800276CB8 /* AlertViewController.swift in Sources */,
 				3B29F8CD205C371100038C2E /* ResetLinkViewController.swift in Sources */,
+				94CD460920973808002BFFB7 /* BLEDataModel.swift in Sources */,
 				3BCF12B8205D8099003F5F2C /* SettingsLanguageTableViewCell.swift in Sources */,
 				3B47821F20601E640013ADE4 /* DeviceDisplayViewController.swift in Sources */,
 				3B7F2BC22059817C00045E2B /* CAButton.swift in Sources */,
@@ -914,10 +932,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QAWTUJ2HHC;
+				DEVELOPMENT_TEAM = 3VG66R4G4L;
 				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciclosport.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciclospor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -933,10 +951,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = QAWTUJ2HHC;
+				DEVELOPMENT_TEAM = 3VG66R4G4L;
 				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciclosport.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciclospor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

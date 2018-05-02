@@ -15,6 +15,8 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
     let cellIdentifier = "DeviceInfoTableViewCell"
     var data = [[String : String]]()
     
+    var bleConnector: BLEPeripheral?
+    
     @IBOutlet weak var labelFirmware: UILabel!
     @IBOutlet weak var labelFirmwareValue: UILabel!
     
@@ -47,9 +49,8 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
                 self.buttonUpdate.isHidden = false
             }
         }
-        
     }
-    
+
     
     // MARK: - UITableView
     
@@ -100,6 +101,27 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    
+    
+    @IBAction func syncBtnPressed(_ sender: CAButton) {
+//        var ind = 1
+        if let bleConnector = bleConnector {
+            
+            bleConnector.sendFirmWare()
+//            let testEvent = BLEDataModel(word: "BlaBlaBla \(ind)")
+//            ind += 1
+////            let error = bleConnector.sendNavigationDataObject(testEvent)
+//
+//            let alert = UIAlertController(title: nil, message: "\("error")", preferredStyle: .alert)
+//            self.present(alert, animated: true, completion: nil)
+//
+//            let when = DispatchTime.now() + 1
+//            DispatchQueue.main.asyncAfter(deadline: when){
+//                alert.dismiss(animated: true, completion: nil)
+//            }
+        }
+    }
+    
     @IBAction func updatePressed(_ sender: CAButton) {
 
         guard let id = idFirmware else { return }
@@ -147,14 +169,5 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

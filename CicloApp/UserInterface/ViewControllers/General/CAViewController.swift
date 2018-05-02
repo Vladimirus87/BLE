@@ -27,9 +27,6 @@ class CAViewController: UIViewController, UIGestureRecognizerDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(self.updateColorScheme), name: Notification.Name(Config.notificationSettingsColorMode), object: nil)
         
         self.updateColorScheme()
-        
-        
-
     }
     
     deinit {
