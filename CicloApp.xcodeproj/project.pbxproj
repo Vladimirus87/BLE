@@ -935,7 +935,7 @@
 				DEVELOPMENT_TEAM = 3VG66R4G4L;
 				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciclospor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciclosport.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -954,7 +954,7 @@
 				DEVELOPMENT_TEAM = 3VG66R4G4L;
 				INFOPLIST_FILE = "$(SRCROOT)/CicloApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ciclospor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ciclosport.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

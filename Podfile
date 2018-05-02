@@ -6,7 +6,7 @@ target 'CicloApp' do
   use_frameworks!
 
   # Pods for CicloApp
-  pod 'Alamofire'#, '~> 4.7'
+    pod 'Alamofire'#, '~> 4.7'
     pod 'Fabric'
     pod 'Crashlytics'
 
