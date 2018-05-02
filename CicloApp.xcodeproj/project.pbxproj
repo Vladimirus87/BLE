@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BFE077B382D95D13E8DB4B3 /* Pods_CicloApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDAC6FF439D43EF46E0EF0C /* Pods_CicloApp.framework */; };
 		3B0C13DA205A8E3800AB245F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C13D9205A8E3700AB245F /* SignInViewController.swift */; };
 		3B0C13DE205ABDB700AB245F /* SignIn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C13DD205ABDB700AB245F /* SignIn.plist */; };
 		3B0C13E1205ABE5800AB245F /* EditAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C13DF205ABE5800AB245F /* EditAccountTableViewCell.swift */; };
@@ -95,11 +96,10 @@
 		94BF48912080B16800276CB8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48902080B16800276CB8 /* AlertViewController.swift */; };
 		94BF48942080EEB900276CB8 /* ViewControllersUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */; };
 		94CD460920973808002BFFB7 /* BLEDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CD460820973808002BFFB7 /* BLEDataModel.swift */; };
-		D700C0C0283A8007DC3092F5 /* Pods_CicloApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		000228E48570032E55AB4726 /* Pods-CicloApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.debug.xcconfig"; sourceTree = "<group>"; };
+		28A204C9D7454D11E9194767 /* Pods-CicloApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3B0C13D9205A8E3700AB245F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3B0C13DD205ABDB700AB245F /* SignIn.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SignIn.plist; sourceTree = "<group>"; };
 		3B0C13DF205ABE5800AB245F /* EditAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountTableViewCell.swift; sourceTree = "<group>"; };
@@ -180,8 +180,6 @@
 		3BFB29CB20585E7D005CB66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3BFB29CE20585F22005CB66C /* MainTabs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MainTabs.plist; sourceTree = "<group>"; };
 		3BFB29D020585FCC005CB66C /* MainTabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCollectionViewCell.swift; sourceTree = "<group>"; };
-		7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicloApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E5C63587587F9ACCA7A4E63 /* Pods-CicloApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.release.xcconfig"; sourceTree = "<group>"; };
 		942F001220863DEC004A7942 /* Activity.fit */ = {isa = PBXFileReference; lastKnownFileType = file; path = Activity.fit; sourceTree = "<group>"; };
 		9480A917207F5A08007E901F /* AccountApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountApi.swift; sourceTree = "<group>"; };
 		9480A91A207F5CBD007E901F /* CAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAUser.swift; sourceTree = "<group>"; };
@@ -192,6 +190,8 @@
 		94BF48902080B16800276CB8 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersUtils.swift; sourceTree = "<group>"; };
 		94CD460820973808002BFFB7 /* BLEDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDataModel.swift; sourceTree = "<group>"; };
+		BEDAC6FF439D43EF46E0EF0C /* Pods_CicloApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicloApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D04CD0A2490CBA95FC506B82 /* Pods-CicloApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,21 +199,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D700C0C0283A8007DC3092F5 /* Pods_CicloApp.framework in Frameworks */,
+				1BFE077B382D95D13E8DB4B3 /* Pods_CicloApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18649040B45C0AFF434CA67E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7D615C547E0B2824F7D9AA2E /* Pods_CicloApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3B0C13DB205ABD9300AB245F /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -425,8 +417,8 @@
 			children = (
 				3BF6A703205819B6004AD091 /* CicloApp */,
 				3BF6A702205819B6004AD091 /* Products */,
-				413CDC083FFCA5C98E8CA71D /* Pods */,
-				18649040B45C0AFF434CA67E /* Frameworks */,
+				A3AB95E54FF3AC97D1E17592 /* Pods */,
+				83BE4F750876B9B15850EDF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -533,13 +525,12 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		413CDC083FFCA5C98E8CA71D /* Pods */ = {
+		83BE4F750876B9B15850EDF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				000228E48570032E55AB4726 /* Pods-CicloApp.debug.xcconfig */,
-				8E5C63587587F9ACCA7A4E63 /* Pods-CicloApp.release.xcconfig */,
+				BEDAC6FF439D43EF46E0EF0C /* Pods_CicloApp.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		9480A916207F5864007E901F /* NetworkService */ = {
@@ -569,6 +560,15 @@
 			path = BLE;
 			sourceTree = "<group>";
 		};
+		A3AB95E54FF3AC97D1E17592 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28A204C9D7454D11E9194767 /* Pods-CicloApp.debug.xcconfig */,
+				D04CD0A2490CBA95FC506B82 /* Pods-CicloApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -576,12 +576,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF6A716205819B6004AD091 /* Build configuration list for PBXNativeTarget "CicloApp" */;
 			buildPhases = (
-				20E31F90A3CECAF26695B8FE /* [CP] Check Pods Manifest.lock */,
+				45E967133091C295FC2F9FA9 /* [CP] Check Pods Manifest.lock */,
 				3BF6A6FD205819B6004AD091 /* Sources */,
 				3BF6A6FE205819B6004AD091 /* Frameworks */,
 				3BF6A6FF205819B6004AD091 /* Resources */,
-				88CE41FBE6AF37EDC1CB7E1E /* [CP] Embed Pods Frameworks */,
 				94781EF320998F72006476CD /* ShellScript */,
+				FA2D3F0654596FA4224254C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -672,7 +672,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20E31F90A3CECAF26695B8FE /* [CP] Check Pods Manifest.lock */ = {
+		45E967133091C295FC2F9FA9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -690,7 +690,20 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		88CE41FBE6AF37EDC1CB7E1E /* [CP] Embed Pods Frameworks */ = {
+		94781EF320998F72006476CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 64badab75fd141d16b4333ea5c76f12b3052b1d3 85743bb7d1f11b6e076ded5692843a6fe7afeb11f4d83d2a0b5fd9ddf71ec420";
+		};
+		FA2D3F0654596FA4224254C9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -707,19 +720,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		94781EF320998F72006476CD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 64badab75fd141d16b4333ea5c76f12b3052b1d3 85743bb7d1f11b6e076ded5692843a6fe7afeb11f4d83d2a0b5fd9ddf71ec420";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -927,7 +927,7 @@
 		};
 		3BF6A717205819B6004AD091 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 000228E48570032E55AB4726 /* Pods-CicloApp.debug.xcconfig */;
+			baseConfigurationReference = 28A204C9D7454D11E9194767 /* Pods-CicloApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -946,7 +946,7 @@
 		};
 		3BF6A718205819B6004AD091 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E5C63587587F9ACCA7A4E63 /* Pods-CicloApp.release.xcconfig */;
+			baseConfigurationReference = D04CD0A2490CBA95FC506B82 /* Pods-CicloApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
