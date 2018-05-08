@@ -114,7 +114,7 @@ class HistoryViewController: CAViewController, UITableViewDelegate, UITableViewD
         cell.delegate = self
         cell.leftConstantOfLbl.constant = isSelectManyPressed ? 50 : 25
         cell.checkbox.isHidden = isSelectManyPressed ? false : true
-        cell.checkbox.image = UIImage(named: "icon_checkbox_off")
+        cell.checkbox.image = Config.shared.colorMode == .light ? #imageLiteral(resourceName: "icon_checkbox_off") : #imageLiteral(resourceName: "night_icon_checkbox_off")
         
         return cell
         

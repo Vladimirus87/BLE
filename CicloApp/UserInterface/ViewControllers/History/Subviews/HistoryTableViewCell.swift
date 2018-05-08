@@ -29,6 +29,7 @@ class HistoryTableViewCell: UITableViewCell {
     
     
     var track: CATrack?
+    var isLightTheme = true
     
     var timer: Timer?
     var progress: Double = 0.0
@@ -89,7 +90,6 @@ class HistoryTableViewCell: UITableViewCell {
         self.buttonAction.tintColor = Config.shared.textColor()
         
         self.viewDivider.backgroundColor = Config.shared.dividerColor()
-        
     }
     
     @objc func animateTimer() {
@@ -121,7 +121,9 @@ class HistoryTableViewCell: UITableViewCell {
         guard let currentTrack = track else { return }
         
         currentTrack.isChecked = !currentTrack.isChecked
-        let checkImg = currentTrack.isChecked ? UIImage(named: "icon_checkbox_on") : UIImage(named: "icon_checkbox_off")
+        let checkImg = Config.shared.colorMode == .light ?
+            (currentTrack.isChecked ? #imageLiteral(resourceName: "icon_checkbox_on") : #imageLiteral(resourceName: "icon_checkbox_off")) :
+            (currentTrack.isChecked ? #imageLiteral(resourceName: "night_icon_checkbox_on") : #imageLiteral(resourceName: "night_icon_checkbox_off"))
         checkbox.image = checkImg
     }
     

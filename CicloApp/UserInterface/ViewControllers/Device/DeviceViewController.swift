@@ -107,7 +107,7 @@ class DeviceViewController: CAViewController, UITableViewDelegate, UITableViewDa
 //        var ind = 1
         if let bleConnector = bleConnector {
             
-            bleConnector.sendFirmWare()
+            bleConnector.sendFirmware()
 //            let testEvent = BLEDataModel(word: "BlaBlaBla \(ind)")
 //            ind += 1
 ////            let error = bleConnector.sendNavigationDataObject(testEvent)

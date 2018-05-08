@@ -96,6 +96,7 @@
 		94BF48912080B16800276CB8 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48902080B16800276CB8 /* AlertViewController.swift */; };
 		94BF48942080EEB900276CB8 /* ViewControllersUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */; };
 		94CD460920973808002BFFB7 /* BLEDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CD460820973808002BFFB7 /* BLEDataModel.swift */; };
+		94F53441209C8F45003CD919 /* HAC1.hex in Resources */ = {isa = PBXBuildFile; fileRef = 94F53440209C8F45003CD919 /* HAC1.hex */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +191,7 @@
 		94BF48902080B16800276CB8 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		94BF48932080EEB900276CB8 /* ViewControllersUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersUtils.swift; sourceTree = "<group>"; };
 		94CD460820973808002BFFB7 /* BLEDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDataModel.swift; sourceTree = "<group>"; };
+		94F53440209C8F45003CD919 /* HAC1.hex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HAC1.hex; sourceTree = "<group>"; };
 		BEDAC6FF439D43EF46E0EF0C /* Pods_CicloApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CicloApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04CD0A2490CBA95FC506B82 /* Pods-CicloApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CicloApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CicloApp/Pods-CicloApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -480,7 +482,7 @@
 		3BFB29C420585921005CB66C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				942F001220863DEC004A7942 /* Activity.fit */,
+				94F5343F209C8F1B003CD919 /* TEST */,
 				3B695651206278D200167103 /* iTunesArtwork */,
 				3BEA45EC205C1A730002931F /* Fonts */,
 				3BFB29C920585E7D005CB66C /* Localization */,
@@ -549,6 +551,15 @@
 				9480A91A207F5CBD007E901F /* CAUser.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		94F5343F209C8F1B003CD919 /* TEST */ = {
+			isa = PBXGroup;
+			children = (
+				94F53440209C8F45003CD919 /* HAC1.hex */,
+				942F001220863DEC004A7942 /* Activity.fit */,
+			);
+			path = TEST;
 			sourceTree = "<group>";
 		};
 		94FFE3272093235E00BC3078 /* BLE */ = {
@@ -643,6 +654,7 @@
 				3BCF12BD205D824B003F5F2C /* SettingsInfoTableViewCell.xib in Resources */,
 				3B7F2BC92059841A00045E2B /* ConnectTableViewCell.xib in Resources */,
 				3BCF12B9205D8099003F5F2C /* SettingsLanguageTableViewCell.xib in Resources */,
+				94F53441209C8F45003CD919 /* HAC1.hex in Resources */,
 				3BF6A712205819B6004AD091 /* LaunchScreen.storyboard in Resources */,
 				3B47821D206017C40013ADE4 /* SettingsTextFieldTableViewCell.xib in Resources */,
 				3BE10DE920600088004B82E1 /* DeviceSettings.plist in Resources */,
